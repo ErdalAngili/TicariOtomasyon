@@ -1,6 +1,6 @@
 ﻿namespace WinForms.Forms
 {
-    partial class FrmMusteriler
+    partial class FrmPersoneller
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,22 @@
             this.myGridControl1 = new WinForms.UserControl.MyGridControl.MyGridControl();
             this.myGridView1 = new WinForms.UserControl.MyGridControl.MyGridView();
             this.colID = new WinForms.UserControl.MyGridControl.MyGridColumn();
+            this.ColAD = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColSOYAD = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColTELEFON = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColTC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColMAIL = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColIL = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColILCE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColADRES = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColGOREV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.TxtMail = new WinForms.UserControl.MyTextMail.MyTextMail();
             this.Comilce = new System.Windows.Forms.ComboBox();
             this.Comil = new System.Windows.Forms.ComboBox();
             this.MaskTC = new System.Windows.Forms.MaskedTextBox();
             this.MaskTelefon = new System.Windows.Forms.MaskedTextBox();
-            this.TxtVergiDaire = new DevExpress.XtraEditors.TextEdit();
+            this.TxtGorev = new DevExpress.XtraEditors.TextEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.TxtId = new DevExpress.XtraEditors.TextEdit();
@@ -49,28 +58,17 @@
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.MskTelefonIki = new System.Windows.Forms.MaskedTextBox();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.TxtSoyad = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TxtAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.ColAD = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColSOYAD = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColTELEFON = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColTELEFON2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColTC = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColIL = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColILCE = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColADRES = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColVERGIDAIRESI = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVergiDaire.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtGorev.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).BeginInit();
@@ -82,7 +80,7 @@
             this.myGridControl1.MainView = this.myGridView1;
             this.myGridControl1.Name = "myGridControl1";
             this.myGridControl1.Size = new System.Drawing.Size(1573, 1048);
-            this.myGridControl1.TabIndex = 0;
+            this.myGridControl1.TabIndex = 1;
             this.myGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.myGridView1});
             // 
@@ -101,12 +99,12 @@
             this.ColAD,
             this.ColSOYAD,
             this.ColTELEFON,
-            this.ColTELEFON2,
             this.ColTC,
+            this.ColMAIL,
             this.ColIL,
             this.ColILCE,
             this.ColADRES,
-            this.ColVERGIDAIRESI});
+            this.ColGOREV});
             this.myGridView1.GridControl = this.myGridControl1;
             this.myGridView1.Name = "myGridView1";
             this.myGridView1.OptionsMenu.EnableColumnMenu = false;
@@ -123,7 +121,89 @@
             this.colID.Caption = "ID";
             this.colID.FieldName = "ID";
             this.colID.Name = "colID";
+            this.colID.OptionsColumn.AllowEdit = false;
             this.colID.OptionsColumn.ShowInCustomizationForm = false;
+            // 
+            // ColAD
+            // 
+            this.ColAD.Caption = "AD";
+            this.ColAD.FieldName = "AD";
+            this.ColAD.Name = "ColAD";
+            this.ColAD.Visible = true;
+            this.ColAD.VisibleIndex = 0;
+            this.ColAD.Width = 160;
+            // 
+            // ColSOYAD
+            // 
+            this.ColSOYAD.Caption = "SOYAD";
+            this.ColSOYAD.FieldName = "SOYAD";
+            this.ColSOYAD.Name = "ColSOYAD";
+            this.ColSOYAD.Visible = true;
+            this.ColSOYAD.VisibleIndex = 1;
+            this.ColSOYAD.Width = 160;
+            // 
+            // ColTELEFON
+            // 
+            this.ColTELEFON.Caption = "TELEFON";
+            this.ColTELEFON.FieldName = "TELEFON";
+            this.ColTELEFON.Name = "ColTELEFON";
+            this.ColTELEFON.Visible = true;
+            this.ColTELEFON.VisibleIndex = 2;
+            this.ColTELEFON.Width = 160;
+            // 
+            // ColTC
+            // 
+            this.ColTC.Caption = "TC";
+            this.ColTC.FieldName = "TC";
+            this.ColTC.Name = "ColTC";
+            this.ColTC.Visible = true;
+            this.ColTC.VisibleIndex = 3;
+            this.ColTC.Width = 160;
+            // 
+            // ColMAIL
+            // 
+            this.ColMAIL.Caption = "MAİL";
+            this.ColMAIL.FieldName = "MAIL";
+            this.ColMAIL.Name = "ColMAIL";
+            this.ColMAIL.Visible = true;
+            this.ColMAIL.VisibleIndex = 4;
+            this.ColMAIL.Width = 160;
+            // 
+            // ColIL
+            // 
+            this.ColIL.Caption = "İL";
+            this.ColIL.FieldName = "IL";
+            this.ColIL.Name = "ColIL";
+            this.ColIL.Visible = true;
+            this.ColIL.VisibleIndex = 5;
+            this.ColIL.Width = 160;
+            // 
+            // ColILCE
+            // 
+            this.ColILCE.Caption = "İLÇE";
+            this.ColILCE.FieldName = "ILCE";
+            this.ColILCE.Name = "ColILCE";
+            this.ColILCE.Visible = true;
+            this.ColILCE.VisibleIndex = 6;
+            this.ColILCE.Width = 160;
+            // 
+            // ColADRES
+            // 
+            this.ColADRES.Caption = "ADRES";
+            this.ColADRES.FieldName = "ADRES";
+            this.ColADRES.Name = "ColADRES";
+            this.ColADRES.Visible = true;
+            this.ColADRES.VisibleIndex = 7;
+            this.ColADRES.Width = 274;
+            // 
+            // ColGOREV
+            // 
+            this.ColGOREV.Caption = "GOREV";
+            this.ColGOREV.FieldName = "GOREV";
+            this.ColGOREV.Name = "ColGOREV";
+            this.ColGOREV.Visible = true;
+            this.ColGOREV.VisibleIndex = 8;
+            this.ColGOREV.Width = 160;
             // 
             // groupControl1
             // 
@@ -132,7 +212,7 @@
             this.groupControl1.Controls.Add(this.Comil);
             this.groupControl1.Controls.Add(this.MaskTC);
             this.groupControl1.Controls.Add(this.MaskTelefon);
-            this.groupControl1.Controls.Add(this.TxtVergiDaire);
+            this.groupControl1.Controls.Add(this.TxtGorev);
             this.groupControl1.Controls.Add(this.labelControl10);
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.TxtId);
@@ -144,8 +224,6 @@
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.labelControl6);
-            this.groupControl1.Controls.Add(this.MskTelefonIki);
-            this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.TxtSoyad);
             this.groupControl1.Controls.Add(this.labelControl2);
@@ -154,11 +232,11 @@
             this.groupControl1.Location = new System.Drawing.Point(1573, 0);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(338, 1046);
-            this.groupControl1.TabIndex = 4;
+            this.groupControl1.TabIndex = 5;
             // 
             // TxtMail
             // 
-            this.TxtMail.Location = new System.Drawing.Point(113, 215);
+            this.TxtMail.Location = new System.Drawing.Point(112, 185);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
             this.TxtMail.Properties.Appearance.Options.UseFont = true;
@@ -174,7 +252,7 @@
             // 
             this.Comilce.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
             this.Comilce.FormattingEnabled = true;
-            this.Comilce.Location = new System.Drawing.Point(113, 289);
+            this.Comilce.Location = new System.Drawing.Point(113, 263);
             this.Comilce.Name = "Comilce";
             this.Comilce.Size = new System.Drawing.Size(194, 28);
             this.Comilce.TabIndex = 32;
@@ -183,7 +261,7 @@
             // 
             this.Comil.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
             this.Comil.FormattingEnabled = true;
-            this.Comil.Location = new System.Drawing.Point(113, 252);
+            this.Comil.Location = new System.Drawing.Point(113, 223);
             this.Comil.Name = "Comil";
             this.Comil.Size = new System.Drawing.Size(194, 28);
             this.Comil.TabIndex = 31;
@@ -192,7 +270,7 @@
             // MaskTC
             // 
             this.MaskTC.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MaskTC.Location = new System.Drawing.Point(113, 178);
+            this.MaskTC.Location = new System.Drawing.Point(112, 145);
             this.MaskTC.Mask = "00000000000";
             this.MaskTC.Name = "MaskTC";
             this.MaskTC.Size = new System.Drawing.Size(194, 25);
@@ -208,30 +286,30 @@
             this.MaskTelefon.Size = new System.Drawing.Size(194, 25);
             this.MaskTelefon.TabIndex = 29;
             // 
-            // TxtVergiDaire
+            // TxtGorev
             // 
-            this.TxtVergiDaire.Location = new System.Drawing.Point(113, 326);
-            this.TxtVergiDaire.Name = "TxtVergiDaire";
-            this.TxtVergiDaire.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtVergiDaire.Properties.Appearance.Options.UseFont = true;
-            this.TxtVergiDaire.Size = new System.Drawing.Size(194, 26);
-            this.TxtVergiDaire.TabIndex = 28;
+            this.TxtGorev.Location = new System.Drawing.Point(112, 303);
+            this.TxtGorev.Name = "TxtGorev";
+            this.TxtGorev.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtGorev.Properties.Appearance.Options.UseFont = true;
+            this.TxtGorev.Size = new System.Drawing.Size(194, 26);
+            this.TxtGorev.TabIndex = 28;
             // 
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(17, 329);
+            this.labelControl10.Location = new System.Drawing.Point(54, 306);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(90, 20);
+            this.labelControl10.Size = new System.Drawing.Size(52, 20);
             this.labelControl10.TabIndex = 27;
-            this.labelControl10.Text = "VERGİ DAİRE:";
+            this.labelControl10.Text = "GÖREV:";
             // 
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(72, 292);
+            this.labelControl5.Location = new System.Drawing.Point(72, 266);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(35, 20);
             this.labelControl5.TabIndex = 25;
@@ -252,7 +330,7 @@
             this.BtnSil.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnSil.Appearance.Options.UseFont = true;
             this.BtnSil.ImageOptions.Image = global::WinForms.Properties.Resources.close_32x32;
-            this.BtnSil.Location = new System.Drawing.Point(113, 609);
+            this.BtnSil.Location = new System.Drawing.Point(113, 591);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(194, 36);
             this.BtnSil.TabIndex = 23;
@@ -264,7 +342,7 @@
             this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnGuncelle.Appearance.Options.UseFont = true;
             this.BtnGuncelle.ImageOptions.Image = global::WinForms.Properties.Resources.convert_32x32;
-            this.BtnGuncelle.Location = new System.Drawing.Point(112, 561);
+            this.BtnGuncelle.Location = new System.Drawing.Point(112, 543);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(194, 36);
             this.BtnGuncelle.TabIndex = 22;
@@ -276,7 +354,7 @@
             this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKaydet.Appearance.Options.UseFont = true;
             this.BtnKaydet.ImageOptions.Image = global::WinForms.Properties.Resources.save_32x32;
-            this.BtnKaydet.Location = new System.Drawing.Point(113, 513);
+            this.BtnKaydet.Location = new System.Drawing.Point(113, 495);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(194, 36);
             this.BtnKaydet.TabIndex = 21;
@@ -286,7 +364,7 @@
             // RichAdres
             // 
             this.RichAdres.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RichAdres.Location = new System.Drawing.Point(113, 363);
+            this.RichAdres.Location = new System.Drawing.Point(112, 340);
             this.RichAdres.Name = "RichAdres";
             this.RichAdres.Size = new System.Drawing.Size(194, 138);
             this.RichAdres.TabIndex = 20;
@@ -296,7 +374,7 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(77, 181);
+            this.labelControl9.Location = new System.Drawing.Point(76, 148);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(30, 20);
             this.labelControl9.TabIndex = 19;
@@ -306,7 +384,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(59, 366);
+            this.labelControl8.Location = new System.Drawing.Point(58, 343);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(48, 20);
             this.labelControl8.TabIndex = 17;
@@ -316,7 +394,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(89, 255);
+            this.labelControl7.Location = new System.Drawing.Point(89, 226);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(18, 20);
             this.labelControl7.TabIndex = 15;
@@ -326,30 +404,11 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(69, 218);
+            this.labelControl6.Location = new System.Drawing.Point(68, 188);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(38, 20);
             this.labelControl6.TabIndex = 13;
             this.labelControl6.Text = "MAİL:";
-            // 
-            // MskTelefonIki
-            // 
-            this.MskTelefonIki.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskTelefonIki.Location = new System.Drawing.Point(113, 143);
-            this.MskTelefonIki.Mask = "(999) 000-0000";
-            this.MskTelefonIki.Name = "MskTelefonIki";
-            this.MskTelefonIki.Size = new System.Drawing.Size(194, 25);
-            this.MskTelefonIki.TabIndex = 12;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(32, 146);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(75, 20);
-            this.labelControl4.TabIndex = 7;
-            this.labelControl4.Text = "TELEFON2:";
             // 
             // labelControl3
             // 
@@ -399,105 +458,24 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Ad:";
             // 
-            // ColAD
-            // 
-            this.ColAD.Caption = "AD";
-            this.ColAD.FieldName = "AD";
-            this.ColAD.Name = "ColAD";
-            this.ColAD.Visible = true;
-            this.ColAD.VisibleIndex = 0;
-            this.ColAD.Width = 162;
-            // 
-            // ColSOYAD
-            // 
-            this.ColSOYAD.Caption = "SOYAD";
-            this.ColSOYAD.FieldName = "SOYAD";
-            this.ColSOYAD.Name = "ColSOYAD";
-            this.ColSOYAD.Visible = true;
-            this.ColSOYAD.VisibleIndex = 1;
-            this.ColSOYAD.Width = 160;
-            // 
-            // ColTELEFON
-            // 
-            this.ColTELEFON.Caption = "TELEFON";
-            this.ColTELEFON.FieldName = "TELEFON";
-            this.ColTELEFON.Name = "ColTELEFON";
-            this.ColTELEFON.Visible = true;
-            this.ColTELEFON.VisibleIndex = 2;
-            this.ColTELEFON.Width = 142;
-            // 
-            // ColTELEFON2
-            // 
-            this.ColTELEFON2.Caption = "TELEFON2";
-            this.ColTELEFON2.FieldName = "TELEFON2";
-            this.ColTELEFON2.Name = "ColTELEFON2";
-            this.ColTELEFON2.Visible = true;
-            this.ColTELEFON2.VisibleIndex = 3;
-            this.ColTELEFON2.Width = 139;
-            // 
-            // ColTC
-            // 
-            this.ColTC.Caption = "TC";
-            this.ColTC.FieldName = "TC";
-            this.ColTC.Name = "ColTC";
-            this.ColTC.Visible = true;
-            this.ColTC.VisibleIndex = 4;
-            this.ColTC.Width = 136;
-            // 
-            // ColIL
-            // 
-            this.ColIL.Caption = "İL";
-            this.ColIL.FieldName = "IL";
-            this.ColIL.Name = "ColIL";
-            this.ColIL.Visible = true;
-            this.ColIL.VisibleIndex = 5;
-            this.ColIL.Width = 166;
-            // 
-            // ColILCE
-            // 
-            this.ColILCE.Caption = "İLÇE";
-            this.ColILCE.FieldName = "ILCE";
-            this.ColILCE.Name = "ColILCE";
-            this.ColILCE.Visible = true;
-            this.ColILCE.VisibleIndex = 6;
-            this.ColILCE.Width = 174;
-            // 
-            // ColADRES
-            // 
-            this.ColADRES.Caption = "ADRES";
-            this.ColADRES.FieldName = "ADRES";
-            this.ColADRES.Name = "ColADRES";
-            this.ColADRES.Visible = true;
-            this.ColADRES.VisibleIndex = 7;
-            this.ColADRES.Width = 275;
-            // 
-            // ColVERGIDAIRESI
-            // 
-            this.ColVERGIDAIRESI.Caption = "VERGİ DAİRESİ";
-            this.ColVERGIDAIRESI.FieldName = "VERGIDAIRE";
-            this.ColVERGIDAIRESI.Name = "ColVERGIDAIRESI";
-            this.ColVERGIDAIRESI.Visible = true;
-            this.ColVERGIDAIRESI.VisibleIndex = 8;
-            this.ColVERGIDAIRESI.Width = 200;
-            // 
-            // FrmMusteriler
+            // FrmPersoneller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1910, 1048);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.myGridControl1);
-            this.Name = "FrmMusteriler";
-            this.Text = "Müşteriler";
+            this.Name = "FrmPersoneller";
+            this.Text = "Personel";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmMusteriler_Load);
+            this.Load += new System.EventHandler(this.FrmPersoneller_Load);
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVergiDaire.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtGorev.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).EndInit();
@@ -511,11 +489,12 @@
         private UserControl.MyGridControl.MyGridView myGridView1;
         private UserControl.MyGridControl.MyGridColumn colID;
         private DevExpress.XtraEditors.GroupControl groupControl1;
+        private UserControl.MyTextMail.MyTextMail TxtMail;
         private System.Windows.Forms.ComboBox Comilce;
         private System.Windows.Forms.ComboBox Comil;
         private System.Windows.Forms.MaskedTextBox MaskTC;
         private System.Windows.Forms.MaskedTextBox MaskTelefon;
-        private DevExpress.XtraEditors.TextEdit TxtVergiDaire;
+        private DevExpress.XtraEditors.TextEdit TxtGorev;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.TextEdit TxtId;
@@ -527,22 +506,19 @@
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private System.Windows.Forms.MaskedTextBox MskTelefonIki;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit TxtSoyad;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit TxtAd;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private UserControl.MyTextMail.MyTextMail TxtMail;
         private DevExpress.XtraGrid.Columns.GridColumn ColAD;
         private DevExpress.XtraGrid.Columns.GridColumn ColSOYAD;
         private DevExpress.XtraGrid.Columns.GridColumn ColTELEFON;
-        private DevExpress.XtraGrid.Columns.GridColumn ColTELEFON2;
         private DevExpress.XtraGrid.Columns.GridColumn ColTC;
+        private DevExpress.XtraGrid.Columns.GridColumn ColMAIL;
         private DevExpress.XtraGrid.Columns.GridColumn ColIL;
         private DevExpress.XtraGrid.Columns.GridColumn ColILCE;
         private DevExpress.XtraGrid.Columns.GridColumn ColADRES;
-        private DevExpress.XtraGrid.Columns.GridColumn ColVERGIDAIRESI;
+        private DevExpress.XtraGrid.Columns.GridColumn ColGOREV;
     }
 }

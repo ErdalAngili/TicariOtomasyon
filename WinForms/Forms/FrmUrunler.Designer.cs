@@ -52,6 +52,14 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TxtAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.ColURUNAD = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColMARKA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColMODEL = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColYIL = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColADET = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColMALIYET = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColSATISFIYAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColDETAY = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -86,7 +94,15 @@
             this.myGridView1.Appearance.ViewCaption.Options.UseFont = true;
             this.myGridView1.Appearance.ViewCaption.Options.UseForeColor = true;
             this.myGridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colID});
+            this.colID,
+            this.ColURUNAD,
+            this.ColMARKA,
+            this.ColMODEL,
+            this.ColYIL,
+            this.ColADET,
+            this.ColMALIYET,
+            this.ColSATISFIYAT,
+            this.ColDETAY});
             this.myGridView1.GridControl = this.myGridControl1;
             this.myGridView1.Name = "myGridView1";
             this.myGridView1.OptionsMenu.EnableColumnMenu = false;
@@ -103,7 +119,6 @@
             this.colID.Caption = "ID";
             this.colID.FieldName = "ID";
             this.colID.Name = "colID";
-            this.colID.OptionsColumn.AllowEdit = false;
             this.colID.OptionsColumn.ShowInCustomizationForm = false;
             // 
             // groupControl1
@@ -334,6 +349,78 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Ad:";
             // 
+            // ColURUNAD
+            // 
+            this.ColURUNAD.Caption = "ÜRÜN AD";
+            this.ColURUNAD.FieldName = "URUNAD";
+            this.ColURUNAD.Name = "ColURUNAD";
+            this.ColURUNAD.Visible = true;
+            this.ColURUNAD.VisibleIndex = 0;
+            this.ColURUNAD.Width = 244;
+            // 
+            // ColMARKA
+            // 
+            this.ColMARKA.Caption = "MARKA";
+            this.ColMARKA.FieldName = "MARKA";
+            this.ColMARKA.Name = "ColMARKA";
+            this.ColMARKA.Visible = true;
+            this.ColMARKA.VisibleIndex = 1;
+            this.ColMARKA.Width = 206;
+            // 
+            // ColMODEL
+            // 
+            this.ColMODEL.Caption = "MODEL";
+            this.ColMODEL.FieldName = "MODEL";
+            this.ColMODEL.Name = "ColMODEL";
+            this.ColMODEL.Visible = true;
+            this.ColMODEL.VisibleIndex = 2;
+            this.ColMODEL.Width = 202;
+            // 
+            // ColYIL
+            // 
+            this.ColYIL.Caption = "YIL";
+            this.ColYIL.FieldName = "YIL";
+            this.ColYIL.Name = "ColYIL";
+            this.ColYIL.Visible = true;
+            this.ColYIL.VisibleIndex = 3;
+            this.ColYIL.Width = 177;
+            // 
+            // ColADET
+            // 
+            this.ColADET.Caption = "ADET";
+            this.ColADET.FieldName = "ADET";
+            this.ColADET.Name = "ColADET";
+            this.ColADET.Visible = true;
+            this.ColADET.VisibleIndex = 4;
+            this.ColADET.Width = 167;
+            // 
+            // ColMALIYET
+            // 
+            this.ColMALIYET.Caption = "MALİYET";
+            this.ColMALIYET.FieldName = "MALIYET";
+            this.ColMALIYET.Name = "ColMALIYET";
+            this.ColMALIYET.Visible = true;
+            this.ColMALIYET.VisibleIndex = 5;
+            this.ColMALIYET.Width = 169;
+            // 
+            // ColSATISFIYAT
+            // 
+            this.ColSATISFIYAT.Caption = "SATIŞ FİYAT";
+            this.ColSATISFIYAT.FieldName = "SATISFIYAT";
+            this.ColSATISFIYAT.Name = "ColSATISFIYAT";
+            this.ColSATISFIYAT.Visible = true;
+            this.ColSATISFIYAT.VisibleIndex = 6;
+            this.ColSATISFIYAT.Width = 150;
+            // 
+            // ColDETAY
+            // 
+            this.ColDETAY.Caption = "DETAY";
+            this.ColDETAY.FieldName = "DETAY";
+            this.ColDETAY.Name = "ColDETAY";
+            this.ColDETAY.Visible = true;
+            this.ColDETAY.VisibleIndex = 7;
+            this.ColDETAY.Width = 241;
+            // 
             // FrmUrunler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,5 +474,13 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit TxtAd;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraGrid.Columns.GridColumn ColURUNAD;
+        private DevExpress.XtraGrid.Columns.GridColumn ColMARKA;
+        private DevExpress.XtraGrid.Columns.GridColumn ColMODEL;
+        private DevExpress.XtraGrid.Columns.GridColumn ColYIL;
+        private DevExpress.XtraGrid.Columns.GridColumn ColADET;
+        private DevExpress.XtraGrid.Columns.GridColumn ColMALIYET;
+        private DevExpress.XtraGrid.Columns.GridColumn ColSATISFIYAT;
+        private DevExpress.XtraGrid.Columns.GridColumn ColDETAY;
     }
 }

@@ -158,6 +158,7 @@
             this.barFirmalar.ItemAppearance.Normal.Options.UseFont = true;
             this.barFirmalar.Name = "barFirmalar";
             this.barFirmalar.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barFirmalar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barFirmalar_ItemClick);
             // 
             // barPersonel
             // 
@@ -170,6 +171,7 @@
             this.barPersonel.ItemAppearance.Normal.Options.UseFont = true;
             this.barPersonel.Name = "barPersonel";
             this.barPersonel.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barPersonel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barPersonel_ItemClick);
             // 
             // barGiderler
             // 

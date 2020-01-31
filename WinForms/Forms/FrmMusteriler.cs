@@ -24,7 +24,7 @@ namespace WinForms.Forms
         void GridListele()
         {
             DataTable table = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * from MUSTERILER",sqlbaglanti.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From MUSTERILER",sqlbaglanti.baglanti());
             da.Fill(table);
             myGridControl1.DataSource = table;
         }
@@ -38,14 +38,30 @@ namespace WinForms.Forms
             }
             sqlbaglanti.baglanti().Close();
         }
+        void Temizle()
+        {
+            TxtAd.Text = string.Empty;
+            TxtSoyad.Text = string.Empty;
+            MaskTelefon.Text = string.Empty;
+            MskTelefonIki.Text = string.Empty;
+            TxtId.Text = string.Empty;
+            MaskTC.Text = string.Empty;
+            TxtMail.Text = string.Empty;
+            TxtVergiDaire.Text = string.Empty;
+            RichAdres.Text = string.Empty;
+            Comil.Text = string.Empty;
+            Comilce.Text = string.Empty;
+        }
         private void FrmMusteriler_Load(object sender, EventArgs e)
         {
             SehirListele();
+            Temizle();
             GridListele();
         }
 
         private void Comil_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Comilce.Items.Clear();
             SqlCommand komut = new SqlCommand("Select ILCE from ILCELER where SEHIR=@p1",sqlbaglanti.baglanti());
             komut.Parameters.AddWithValue("@p1", Comil.SelectedIndex + 1);
             SqlDataReader dr = komut.ExecuteReader();
@@ -75,13 +91,14 @@ namespace WinForms.Forms
                 komut.ExecuteNonQuery();
                 MessageBox.Show("Kayıt Başarılı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 sqlbaglanti.baglanti().Close();
-
+                GridListele();
             }
             else
             {
                 MessageBox.Show("Kayıt İşlemi İptal Edildi", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                GridListele();
             }
-            GridListele();
+            
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
@@ -128,7 +145,7 @@ namespace WinForms.Forms
                 GridListele();
             }
         }
-        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        private void myGridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
             DataRow dr = myGridView1.GetDataRow(myGridView1.FocusedRowHandle);
             if (dr != null)
@@ -145,7 +162,6 @@ namespace WinForms.Forms
                 RichAdres.Text = dr["ADRES"].ToString();
                 TxtVergiDaire.Text = dr["VERGIDAIRE"].ToString();
             }
-
         }
     }
 }

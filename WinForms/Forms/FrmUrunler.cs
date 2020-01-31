@@ -27,12 +27,24 @@ namespace WinForms.Forms
             da.Fill(table);
             myGridControl1.DataSource = table;
         }
+        void Temizle()
+        {
+            TxtAd.Text = string.Empty;
+            TxtModel.Text = string.Empty;
+            TxtMarka.Text = string.Empty;
+            TxtMaliyet.Text = string.Empty;
+            TxtId.Text = string.Empty;
+            NudAdet.Value = 0;
+            MskYil.Text = string.Empty;
+            TxtSatis.Text = string.Empty;
+            RichDetay.Text = string.Empty;
+        }
 
         private void FrmUrunler_Load(object sender, EventArgs e)
         {
             GridListele();
+            Temizle();
         }
-
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Ürün Kayıt Edilsin mi?","Uyarı",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
