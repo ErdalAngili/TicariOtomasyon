@@ -113,7 +113,7 @@
             this.myGridView1.OptionsView.ColumnAutoWidth = false;
             this.myGridView1.OptionsView.ShowGroupPanel = false;
             this.myGridView1.OptionsView.ShowViewCaption = true;
-            this.myGridView1.ViewCaption = "Müşteri Listesi";
+            this.myGridView1.ViewCaption = "Personel Listesi";
             this.myGridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.myGridView1_FocusedRowChanged);
             // 
             // colID

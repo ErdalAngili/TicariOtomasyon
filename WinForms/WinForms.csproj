@@ -66,6 +66,24 @@
     <Compile Include="Forms\FrmFirmalar.Designer.cs">
       <DependentUpon>FrmFirmalar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmGiderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmGiderler.Designer.cs">
+      <DependentUpon>FrmGiderler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmIletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmIletisim.Designer.cs">
+      <DependentUpon>FrmIletisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMail.Designer.cs">
+      <DependentUpon>FrmMail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmMusteriler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +115,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmFirmalar.resx">
       <DependentUpon>FrmFirmalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmGiderler.resx">
+      <DependentUpon>FrmGiderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmIletisim.resx">
+      <DependentUpon>FrmIletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMail.resx">
+      <DependentUpon>FrmMail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMusteriler.resx">
       <DependentUpon>FrmMusteriler.cs</DependentUpon>
@@ -214,6 +241,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_phone.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removedataitems.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

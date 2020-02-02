@@ -31,6 +31,23 @@
             this.myGridControl1 = new WinForms.UserControl.MyGridControl.MyGridControl();
             this.myGridView1 = new WinForms.UserControl.MyGridControl.MyGridView();
             this.colID = new WinForms.UserControl.MyGridControl.MyGridColumn();
+            this.ColAD = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColYETKILISTATU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColYETKILIADSOYAD = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColYETKILITC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColSEKTOR = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColTELEFON1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColTELEFON2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColTELEFON3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColMAIL = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColFAX = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColIL = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColILCE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColVERGIDAIRE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColADRES = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColOZELKOD1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColOZELKOD2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColOZELKOD3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
@@ -86,23 +103,6 @@
             this.TxtKodiki = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.TxtKodBir = new DevExpress.XtraEditors.TextEdit();
-            this.ColAD = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColYETKILISTATU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColYETKILIADSOYAD = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColYETKILITC = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColSEKTOR = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColTELEFON1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColTELEFON2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColTELEFON3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColMAIL = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColFAX = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColIL = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColILCE = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColVERGIDAIRE = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColADRES = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColOZELKOD1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColOZELKOD2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColOZELKOD3 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -185,6 +185,7 @@
             this.myGridView1.OptionsView.ColumnAutoWidth = false;
             this.myGridView1.OptionsView.ShowGroupPanel = false;
             this.myGridView1.OptionsView.ShowViewCaption = true;
+            this.myGridView1.ViewCaption = "Firma Listesi";
             this.myGridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.myGridView1_FocusedRowChanged);
             // 
             // colID
@@ -193,6 +194,152 @@
             this.colID.FieldName = "ID";
             this.colID.Name = "colID";
             this.colID.OptionsColumn.ShowInCustomizationForm = false;
+            // 
+            // ColAD
+            // 
+            this.ColAD.Caption = "AD";
+            this.ColAD.FieldName = "AD";
+            this.ColAD.Name = "ColAD";
+            this.ColAD.Visible = true;
+            this.ColAD.VisibleIndex = 0;
+            this.ColAD.Width = 110;
+            // 
+            // ColYETKILISTATU
+            // 
+            this.ColYETKILISTATU.Caption = "YETKİLİ STATÜ";
+            this.ColYETKILISTATU.FieldName = "YETKILISTATU";
+            this.ColYETKILISTATU.Name = "ColYETKILISTATU";
+            this.ColYETKILISTATU.Visible = true;
+            this.ColYETKILISTATU.VisibleIndex = 1;
+            this.ColYETKILISTATU.Width = 122;
+            // 
+            // ColYETKILIADSOYAD
+            // 
+            this.ColYETKILIADSOYAD.Caption = "YETKİLİ AD SOYAD";
+            this.ColYETKILIADSOYAD.FieldName = "YETKILIADSOYAD";
+            this.ColYETKILIADSOYAD.Name = "ColYETKILIADSOYAD";
+            this.ColYETKILIADSOYAD.Visible = true;
+            this.ColYETKILIADSOYAD.VisibleIndex = 2;
+            this.ColYETKILIADSOYAD.Width = 137;
+            // 
+            // ColYETKILITC
+            // 
+            this.ColYETKILITC.Caption = "YETKİLİ TC";
+            this.ColYETKILITC.FieldName = "YETKILITC";
+            this.ColYETKILITC.Name = "ColYETKILITC";
+            this.ColYETKILITC.Visible = true;
+            this.ColYETKILITC.VisibleIndex = 3;
+            this.ColYETKILITC.Width = 96;
+            // 
+            // ColSEKTOR
+            // 
+            this.ColSEKTOR.Caption = "SEKTÖR";
+            this.ColSEKTOR.FieldName = "SEKTOR";
+            this.ColSEKTOR.Name = "ColSEKTOR";
+            this.ColSEKTOR.Visible = true;
+            this.ColSEKTOR.VisibleIndex = 4;
+            this.ColSEKTOR.Width = 97;
+            // 
+            // ColTELEFON1
+            // 
+            this.ColTELEFON1.Caption = "TELEFON1";
+            this.ColTELEFON1.FieldName = "TELEFON1";
+            this.ColTELEFON1.Name = "ColTELEFON1";
+            this.ColTELEFON1.Visible = true;
+            this.ColTELEFON1.VisibleIndex = 5;
+            this.ColTELEFON1.Width = 89;
+            // 
+            // ColTELEFON2
+            // 
+            this.ColTELEFON2.Caption = "TELEFON2";
+            this.ColTELEFON2.FieldName = "TELEFON2";
+            this.ColTELEFON2.Name = "ColTELEFON2";
+            this.ColTELEFON2.Visible = true;
+            this.ColTELEFON2.VisibleIndex = 6;
+            this.ColTELEFON2.Width = 85;
+            // 
+            // ColTELEFON3
+            // 
+            this.ColTELEFON3.Caption = "TELEFON3";
+            this.ColTELEFON3.FieldName = "TELEFON3";
+            this.ColTELEFON3.Name = "ColTELEFON3";
+            this.ColTELEFON3.Visible = true;
+            this.ColTELEFON3.VisibleIndex = 7;
+            this.ColTELEFON3.Width = 95;
+            // 
+            // ColMAIL
+            // 
+            this.ColMAIL.Caption = "MAİL";
+            this.ColMAIL.FieldName = "MAIL";
+            this.ColMAIL.Name = "ColMAIL";
+            this.ColMAIL.Visible = true;
+            this.ColMAIL.VisibleIndex = 8;
+            this.ColMAIL.Width = 91;
+            // 
+            // ColFAX
+            // 
+            this.ColFAX.Caption = "FAX";
+            this.ColFAX.FieldName = "FAX";
+            this.ColFAX.Name = "ColFAX";
+            this.ColFAX.Visible = true;
+            this.ColFAX.VisibleIndex = 9;
+            this.ColFAX.Width = 87;
+            // 
+            // ColIL
+            // 
+            this.ColIL.Caption = "İL";
+            this.ColIL.FieldName = "IL";
+            this.ColIL.Name = "ColIL";
+            this.ColIL.Visible = true;
+            this.ColIL.VisibleIndex = 10;
+            // 
+            // ColILCE
+            // 
+            this.ColILCE.Caption = "İLÇE";
+            this.ColILCE.FieldName = "ILCE";
+            this.ColILCE.Name = "ColILCE";
+            this.ColILCE.Visible = true;
+            this.ColILCE.VisibleIndex = 11;
+            // 
+            // ColVERGIDAIRE
+            // 
+            this.ColVERGIDAIRE.Caption = "VERGİ DAİRESİ";
+            this.ColVERGIDAIRE.FieldName = "VERGIDAIRE";
+            this.ColVERGIDAIRE.Name = "ColVERGIDAIRE";
+            this.ColVERGIDAIRE.Visible = true;
+            this.ColVERGIDAIRE.VisibleIndex = 12;
+            // 
+            // ColADRES
+            // 
+            this.ColADRES.Caption = "ADRES";
+            this.ColADRES.FieldName = "ADRES";
+            this.ColADRES.Name = "ColADRES";
+            this.ColADRES.Visible = true;
+            this.ColADRES.VisibleIndex = 13;
+            // 
+            // ColOZELKOD1
+            // 
+            this.ColOZELKOD1.Caption = "ÖZEL KOD1";
+            this.ColOZELKOD1.FieldName = "OZELKOD1";
+            this.ColOZELKOD1.Name = "ColOZELKOD1";
+            this.ColOZELKOD1.Visible = true;
+            this.ColOZELKOD1.VisibleIndex = 14;
+            // 
+            // ColOZELKOD2
+            // 
+            this.ColOZELKOD2.Caption = "ÖZEL KOD2";
+            this.ColOZELKOD2.FieldName = "OZELKOD2";
+            this.ColOZELKOD2.Name = "ColOZELKOD2";
+            this.ColOZELKOD2.Visible = true;
+            this.ColOZELKOD2.VisibleIndex = 15;
+            // 
+            // ColOZELKOD3
+            // 
+            this.ColOZELKOD3.Caption = "ÖZEL KOD3";
+            this.ColOZELKOD3.FieldName = "OZELKOD3";
+            this.ColOZELKOD3.Name = "ColOZELKOD3";
+            this.ColOZELKOD3.Visible = true;
+            this.ColOZELKOD3.VisibleIndex = 16;
             // 
             // xtraTabControl1
             // 
@@ -753,152 +900,6 @@
             this.TxtKodBir.Properties.Appearance.Options.UseFont = true;
             this.TxtKodBir.Size = new System.Drawing.Size(194, 26);
             this.TxtKodBir.TabIndex = 2;
-            // 
-            // ColAD
-            // 
-            this.ColAD.Caption = "AD";
-            this.ColAD.FieldName = "AD";
-            this.ColAD.Name = "ColAD";
-            this.ColAD.Visible = true;
-            this.ColAD.VisibleIndex = 0;
-            this.ColAD.Width = 110;
-            // 
-            // ColYETKILISTATU
-            // 
-            this.ColYETKILISTATU.Caption = "YETKİLİ STATÜ";
-            this.ColYETKILISTATU.FieldName = "YETKILISTATU";
-            this.ColYETKILISTATU.Name = "ColYETKILISTATU";
-            this.ColYETKILISTATU.Visible = true;
-            this.ColYETKILISTATU.VisibleIndex = 1;
-            this.ColYETKILISTATU.Width = 122;
-            // 
-            // ColYETKILIADSOYAD
-            // 
-            this.ColYETKILIADSOYAD.Caption = "YETKİLİ AD SOYAD";
-            this.ColYETKILIADSOYAD.FieldName = "YETKILIADSOYAD";
-            this.ColYETKILIADSOYAD.Name = "ColYETKILIADSOYAD";
-            this.ColYETKILIADSOYAD.Visible = true;
-            this.ColYETKILIADSOYAD.VisibleIndex = 2;
-            this.ColYETKILIADSOYAD.Width = 137;
-            // 
-            // ColYETKILITC
-            // 
-            this.ColYETKILITC.Caption = "YETKİLİ TC";
-            this.ColYETKILITC.FieldName = "YETKILITC";
-            this.ColYETKILITC.Name = "ColYETKILITC";
-            this.ColYETKILITC.Visible = true;
-            this.ColYETKILITC.VisibleIndex = 3;
-            this.ColYETKILITC.Width = 96;
-            // 
-            // ColSEKTOR
-            // 
-            this.ColSEKTOR.Caption = "SEKTÖR";
-            this.ColSEKTOR.FieldName = "SEKTOR";
-            this.ColSEKTOR.Name = "ColSEKTOR";
-            this.ColSEKTOR.Visible = true;
-            this.ColSEKTOR.VisibleIndex = 4;
-            this.ColSEKTOR.Width = 97;
-            // 
-            // ColTELEFON1
-            // 
-            this.ColTELEFON1.Caption = "TELEFON1";
-            this.ColTELEFON1.FieldName = "TELEFON1";
-            this.ColTELEFON1.Name = "ColTELEFON1";
-            this.ColTELEFON1.Visible = true;
-            this.ColTELEFON1.VisibleIndex = 5;
-            this.ColTELEFON1.Width = 89;
-            // 
-            // ColTELEFON2
-            // 
-            this.ColTELEFON2.Caption = "TELEFON2";
-            this.ColTELEFON2.FieldName = "TELEFON2";
-            this.ColTELEFON2.Name = "ColTELEFON2";
-            this.ColTELEFON2.Visible = true;
-            this.ColTELEFON2.VisibleIndex = 6;
-            this.ColTELEFON2.Width = 85;
-            // 
-            // ColTELEFON3
-            // 
-            this.ColTELEFON3.Caption = "TELEFON3";
-            this.ColTELEFON3.FieldName = "TELEFON3";
-            this.ColTELEFON3.Name = "ColTELEFON3";
-            this.ColTELEFON3.Visible = true;
-            this.ColTELEFON3.VisibleIndex = 7;
-            this.ColTELEFON3.Width = 95;
-            // 
-            // ColMAIL
-            // 
-            this.ColMAIL.Caption = "MAİL";
-            this.ColMAIL.FieldName = "MAIL";
-            this.ColMAIL.Name = "ColMAIL";
-            this.ColMAIL.Visible = true;
-            this.ColMAIL.VisibleIndex = 8;
-            this.ColMAIL.Width = 91;
-            // 
-            // ColFAX
-            // 
-            this.ColFAX.Caption = "FAX";
-            this.ColFAX.FieldName = "FAX";
-            this.ColFAX.Name = "ColFAX";
-            this.ColFAX.Visible = true;
-            this.ColFAX.VisibleIndex = 9;
-            this.ColFAX.Width = 87;
-            // 
-            // ColIL
-            // 
-            this.ColIL.Caption = "İL";
-            this.ColIL.FieldName = "IL";
-            this.ColIL.Name = "ColIL";
-            this.ColIL.Visible = true;
-            this.ColIL.VisibleIndex = 10;
-            // 
-            // ColILCE
-            // 
-            this.ColILCE.Caption = "İLÇE";
-            this.ColILCE.FieldName = "ILCE";
-            this.ColILCE.Name = "ColILCE";
-            this.ColILCE.Visible = true;
-            this.ColILCE.VisibleIndex = 11;
-            // 
-            // ColVERGIDAIRE
-            // 
-            this.ColVERGIDAIRE.Caption = "VERGİ DAİRESİ";
-            this.ColVERGIDAIRE.FieldName = "VERGIDAIRE";
-            this.ColVERGIDAIRE.Name = "ColVERGIDAIRE";
-            this.ColVERGIDAIRE.Visible = true;
-            this.ColVERGIDAIRE.VisibleIndex = 12;
-            // 
-            // ColADRES
-            // 
-            this.ColADRES.Caption = "ADRES";
-            this.ColADRES.FieldName = "ADRES";
-            this.ColADRES.Name = "ColADRES";
-            this.ColADRES.Visible = true;
-            this.ColADRES.VisibleIndex = 13;
-            // 
-            // ColOZELKOD1
-            // 
-            this.ColOZELKOD1.Caption = "ÖZEL KOD1";
-            this.ColOZELKOD1.FieldName = "OZELKOD1";
-            this.ColOZELKOD1.Name = "ColOZELKOD1";
-            this.ColOZELKOD1.Visible = true;
-            this.ColOZELKOD1.VisibleIndex = 14;
-            // 
-            // ColOZELKOD2
-            // 
-            this.ColOZELKOD2.Caption = "ÖZEL KOD2";
-            this.ColOZELKOD2.FieldName = "OZELKOD2";
-            this.ColOZELKOD2.Name = "ColOZELKOD2";
-            this.ColOZELKOD2.Visible = true;
-            this.ColOZELKOD2.VisibleIndex = 15;
-            // 
-            // ColOZELKOD3
-            // 
-            this.ColOZELKOD3.Caption = "ÖZEL KOD3";
-            this.ColOZELKOD3.FieldName = "OZELKOD3";
-            this.ColOZELKOD3.Name = "ColOZELKOD3";
-            this.ColOZELKOD3.Visible = true;
-            this.ColOZELKOD3.VisibleIndex = 16;
             // 
             // FrmFirmalar
             // 

@@ -56,5 +56,25 @@ namespace WinForms.Forms
                 frmPersoneller.Show();
             }
         }
+        FrmIletisim frmIletisim;
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmIletisim==null)
+            {
+                frmIletisim = new FrmIletisim();
+                frmIletisim.MdiParent = this;
+                frmIletisim.Show();
+            }
+        }
+        FrmGiderler frmgiderler;
+        private void barGiderler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmgiderler==null)
+            {
+                frmgiderler = new FrmGiderler();
+                frmgiderler.MdiParent = this;
+                frmgiderler.Show();
+            }
+        }
     }
 }
