@@ -121,6 +121,16 @@ namespace WinForms.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage clearall {
+            get {
+                object obj = ResourceManager.GetObject("clearall", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap close_32x32 {
@@ -316,6 +326,16 @@ namespace WinForms.Properties {
         internal static DevExpress.Utils.Svg.SvgImage removedataitems {
             get {
                 object obj = ResourceManager.GetObject("removedataitems", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage removedataitems1 {
+            get {
+                object obj = ResourceManager.GetObject("removedataitems1", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }

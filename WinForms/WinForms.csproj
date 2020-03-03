@@ -60,6 +60,18 @@
     <Compile Include="Forms\FrmAnaModul.Designer.cs">
       <DependentUpon>FrmAnaModul.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmBankalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBankalar.Designer.cs">
+      <DependentUpon>FrmBankalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmFaturalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmFaturalar.Designer.cs">
+      <DependentUpon>FrmFaturalar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmFirmalar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,12 @@
     </Compile>
     <EmbeddedResource Include="Forms\FrmAnaModul.resx">
       <DependentUpon>FrmAnaModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBankalar.resx">
+      <DependentUpon>FrmBankalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFaturalar.resx">
+      <DependentUpon>FrmFaturalar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmFirmalar.resx">
       <DependentUpon>FrmFirmalar.cs</DependentUpon>
@@ -262,6 +280,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\removedataitems.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removedataitems1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clearall.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

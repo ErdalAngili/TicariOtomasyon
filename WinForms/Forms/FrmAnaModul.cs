@@ -76,5 +76,25 @@ namespace WinForms.Forms
                 frmgiderler.Show();
             }
         }
+        FrmBankalar frmBankalar;
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmBankalar==null)
+            {
+                frmBankalar = new FrmBankalar();
+                frmBankalar.MdiParent = this;
+                frmBankalar.Show();
+            }
+        }
+        FrmFaturalar frmFaturalar;
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmFaturalar==null)
+            {
+                frmFaturalar = new FrmFaturalar();
+                frmFaturalar.MdiParent = this;
+                frmFaturalar.Show();
+            }
+        }
     }
 }

@@ -69,6 +69,7 @@
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
             this.xtraTabPage2});
+            this.xtraTabControl1.Click += new System.EventHandler(this.xtraTabControl1_Click);
             // 
             // xtraTabPage1
             // 

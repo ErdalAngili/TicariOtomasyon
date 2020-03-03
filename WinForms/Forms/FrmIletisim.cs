@@ -63,5 +63,11 @@ namespace WinForms.Forms
             }
             frmmail.Show();
         }
+
+        private void xtraTabControl1_Click(object sender, EventArgs e)
+        {
+            MusteriIletisimListesi();
+            FirmaIletisimListesi();
+        }
     }
 }

@@ -43,7 +43,7 @@ namespace WinForms.Forms
             TxtId.Text = string.Empty;
             TxtSektor.Text = string.Empty;
             TxtYetkılıAdSoyad.Text = string.Empty;
-            TxtYetkılıGorev.Text = string.Empty;
+            TxtYetkılıstatu.Text = string.Empty;
             TxtVergiDaire.Text = string.Empty;
             TxtKodBir.Text = string.Empty;
             TxtKodiki.Text = string.Empty;
@@ -80,7 +80,8 @@ namespace WinForms.Forms
             if (MessageBox.Show("Firma Eklensin mi?","Uyarı",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
             {
                 SqlCommand komut = new SqlCommand("Insert into FIRMALAR (AD,YETKILISTATU,YETKILIADSOYAD,YETKILITC,SEKTOR,TELEFON1,TELEFON2,TELEFON3,MAIL,FAX,IL,ILCE,VERGIDAIRE,ADRES,OZELKOD1,OZELKOD2,OZELKOD3) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11,@p12,@p13,@p14,@p15,@p16,@p17)", sqlbaglanti.baglanti());
-                komut.Parameters.AddWithValue("@p2", TxtYetkılıGorev.Text);
+                komut.Parameters.AddWithValue("@p1", TxtAd.Text);
+                komut.Parameters.AddWithValue("@p2", TxtYetkılıstatu.Text);
                 komut.Parameters.AddWithValue("@p3", TxtYetkılıAdSoyad.Text);
                 komut.Parameters.AddWithValue("@p4", MaskTC.Text);
                 komut.Parameters.AddWithValue("@p5", TxtSektor.Text);
@@ -117,7 +118,7 @@ namespace WinForms.Forms
                 TxtAd.Text = row["AD"].ToString();
                 TxtSektor.Text = row["SEKTOR"].ToString();
                 TxtYetkılıAdSoyad.Text = row["YETKILIADSOYAD"].ToString();
-                TxtYetkılıGorev.Text = row["YETKILISTATU"].ToString();
+                TxtYetkılıstatu.Text = row["YETKILISTATU"].ToString();
                 MaskTC.Text = row["YETKILITC"].ToString();
                 MaskTelefon.Text = row["TELEFON1"].ToString();
                 MaskTelefonIki.Text = row["TELEFON2"].ToString();
@@ -141,7 +142,7 @@ namespace WinForms.Forms
                 komut.Parameters.AddWithValue("@p1", TxtAd.Text);
                 komut.Parameters.AddWithValue("@p2", TxtSektor.Text);
                 komut.Parameters.AddWithValue("@p3", TxtYetkılıAdSoyad.Text);
-                komut.Parameters.AddWithValue("@p4", TxtYetkılıGorev.Text);
+                komut.Parameters.AddWithValue("@p4", TxtYetkılıstatu.Text);
                 komut.Parameters.AddWithValue("@p5", MaskTC.Text);
                 komut.Parameters.AddWithValue("@p6", MaskTelefon.Text);
                 komut.Parameters.AddWithValue("@p7", MaskTelefonIki.Text);

@@ -55,8 +55,8 @@ namespace WinForms.Forms
         private void FrmMusteriler_Load(object sender, EventArgs e)
         {
             SehirListele();
-            Temizle();
             GridListele();
+            Temizle();
         }
 
         private void Comil_SelectedIndexChanged(object sender, EventArgs e)

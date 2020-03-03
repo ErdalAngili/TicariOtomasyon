@@ -133,6 +133,7 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.TxtMailAdres);
             this.Controls.Add(this.labelControl2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mail";

@@ -51,7 +51,6 @@
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.MaskMail = new System.Windows.Forms.MaskedTextBox();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.MaskFax = new System.Windows.Forms.MaskedTextBox();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
@@ -62,7 +61,7 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.MaskTelefon = new System.Windows.Forms.MaskedTextBox();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.TxtYetkılıGorev = new DevExpress.XtraEditors.TextEdit();
+            this.TxtYetkılıstatu = new DevExpress.XtraEditors.TextEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.TxtYetkılıAdSoyad = new DevExpress.XtraEditors.TextEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -103,6 +102,7 @@
             this.TxtKodiki = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.TxtKodBir = new DevExpress.XtraEditors.TextEdit();
+            this.MaskMail = new WinForms.UserControl.MyTextMail.MyTextMail();
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -112,7 +112,7 @@
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtYetkılıGorev.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtYetkılıstatu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtYetkılıAdSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -136,6 +136,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodUc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodiki.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodBir.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaskMail.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // myGridControl1
@@ -383,14 +384,6 @@
             this.groupControl4.TabIndex = 3;
             this.groupControl4.Text = "groupControl4";
             // 
-            // MaskMail
-            // 
-            this.MaskMail.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
-            this.MaskMail.Location = new System.Drawing.Point(141, 162);
-            this.MaskMail.Name = "MaskMail";
-            this.MaskMail.Size = new System.Drawing.Size(194, 25);
-            this.MaskMail.TabIndex = 36;
-            // 
             // labelControl15
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -479,7 +472,7 @@
             // 
             // groupControl3
             // 
-            this.groupControl3.Controls.Add(this.TxtYetkılıGorev);
+            this.groupControl3.Controls.Add(this.TxtYetkılıstatu);
             this.groupControl3.Controls.Add(this.labelControl12);
             this.groupControl3.Controls.Add(this.TxtYetkılıAdSoyad);
             this.groupControl3.Controls.Add(this.labelControl11);
@@ -492,14 +485,14 @@
             this.groupControl3.TabIndex = 2;
             this.groupControl3.Text = "groupControl3";
             // 
-            // TxtYetkılıGorev
+            // TxtYetkılıstatu
             // 
-            this.TxtYetkılıGorev.Location = new System.Drawing.Point(141, 75);
-            this.TxtYetkılıGorev.Name = "TxtYetkılıGorev";
-            this.TxtYetkılıGorev.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtYetkılıGorev.Properties.Appearance.Options.UseFont = true;
-            this.TxtYetkılıGorev.Size = new System.Drawing.Size(194, 26);
-            this.TxtYetkılıGorev.TabIndex = 5;
+            this.TxtYetkılıstatu.Location = new System.Drawing.Point(141, 75);
+            this.TxtYetkılıstatu.Name = "TxtYetkılıstatu";
+            this.TxtYetkılıstatu.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtYetkılıstatu.Properties.Appearance.Options.UseFont = true;
+            this.TxtYetkılıstatu.Size = new System.Drawing.Size(194, 26);
+            this.TxtYetkılıstatu.TabIndex = 5;
             // 
             // labelControl12
             // 
@@ -507,9 +500,9 @@
             this.labelControl12.Appearance.Options.UseFont = true;
             this.labelControl12.Location = new System.Drawing.Point(27, 78);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(108, 20);
+            this.labelControl12.Size = new System.Drawing.Size(106, 20);
             this.labelControl12.TabIndex = 4;
-            this.labelControl12.Text = "YETKİLİ GÖREV:";
+            this.labelControl12.Text = "YETKİLİ STATÜ:";
             // 
             // TxtYetkılıAdSoyad
             // 
@@ -589,9 +582,9 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(112, 42);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(23, 20);
+            this.labelControl1.Size = new System.Drawing.Size(24, 20);
             this.labelControl1.TabIndex = 6;
-            this.labelControl1.Text = "Ad:";
+            this.labelControl1.Text = "AD:";
             // 
             // TxtSektor
             // 
@@ -901,6 +894,20 @@
             this.TxtKodBir.Size = new System.Drawing.Size(194, 26);
             this.TxtKodBir.TabIndex = 2;
             // 
+            // MaskMail
+            // 
+            this.MaskMail.Location = new System.Drawing.Point(141, 162);
+            this.MaskMail.Name = "MaskMail";
+            this.MaskMail.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.MaskMail.Properties.Appearance.Options.UseFont = true;
+            this.MaskMail.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
+            this.MaskMail.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+    "-])+)+";
+            this.MaskMail.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.MaskMail.Properties.MaxLength = 50;
+            this.MaskMail.Size = new System.Drawing.Size(194, 26);
+            this.MaskMail.TabIndex = 36;
+            // 
             // FrmFirmalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -923,7 +930,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtYetkılıGorev.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtYetkılıstatu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtYetkılıAdSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
@@ -950,6 +957,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodUc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodiki.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodBir.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaskMail.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -970,7 +978,6 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
         private DevExpress.XtraEditors.GroupControl groupControl4;
-        private System.Windows.Forms.MaskedTextBox MaskMail;
         private DevExpress.XtraEditors.LabelControl labelControl15;
         private System.Windows.Forms.MaskedTextBox MaskFax;
         private DevExpress.XtraEditors.LabelControl labelControl14;
@@ -981,7 +988,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private System.Windows.Forms.MaskedTextBox MaskTelefon;
         private DevExpress.XtraEditors.GroupControl groupControl3;
-        private DevExpress.XtraEditors.TextEdit TxtYetkılıGorev;
+        private DevExpress.XtraEditors.TextEdit TxtYetkılıstatu;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.TextEdit TxtYetkılıAdSoyad;
         private DevExpress.XtraEditors.LabelControl labelControl11;
@@ -1031,5 +1038,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn ColOZELKOD1;
         private DevExpress.XtraGrid.Columns.GridColumn ColOZELKOD2;
         private DevExpress.XtraGrid.Columns.GridColumn ColOZELKOD3;
+        private UserControl.MyTextMail.MyTextMail MaskMail;
     }
 }
