@@ -72,6 +72,18 @@
     <Compile Include="Forms\FrmFaturalar.Designer.cs">
       <DependentUpon>FrmFaturalar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmFaturaUrun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmFaturaUrun.Designer.cs">
+      <DependentUpon>FrmFaturaUrun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmFaturaUrunDüzenleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmFaturaUrunDüzenleme.Designer.cs">
+      <DependentUpon>FrmFaturaUrunDüzenleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmFirmalar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmFaturalar.resx">
       <DependentUpon>FrmFaturalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFaturaUrun.resx">
+      <DependentUpon>FrmFaturaUrun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFaturaUrunDüzenleme.resx">
+      <DependentUpon>FrmFaturaUrunDüzenleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmFirmalar.resx">
       <DependentUpon>FrmFirmalar.cs</DependentUpon>

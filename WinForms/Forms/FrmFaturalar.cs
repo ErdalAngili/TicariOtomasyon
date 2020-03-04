@@ -132,6 +132,10 @@ namespace WinForms.Forms
             TxtTutar.Text = tutar.ToString();
             FirmaListele();
         }
+        private void btnAlanTemizle_Click(object sender, EventArgs e)
+        {
+            Temizle();
+        }
 
         private void BtnSil_Click(object sender, EventArgs e)
         {
@@ -184,9 +188,15 @@ namespace WinForms.Forms
             }
         }
 
-        private void btnAlanTemizle_Click(object sender, EventArgs e)
+        private void myGridView1_DoubleClick(object sender, EventArgs e)
         {
-            Temizle();
+            FrmFaturaUrun FaturaUrun = new FrmFaturaUrun();
+            DataRow row = myGridView1.GetDataRow(myGridView1.FocusedRowHandle);
+            if (row!=null)
+            {
+                FaturaUrun.id = row["FATURABILGIID"].ToString();
+            }
+            FaturaUrun.Show();
         }
     }
 }

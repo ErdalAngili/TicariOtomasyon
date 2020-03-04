@@ -126,6 +126,9 @@
             this.myGridView1.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.myGridView1.Appearance.HeaderPanel.Options.UseTextOptions = true;
             this.myGridView1.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.myGridView1.Appearance.Row.BackColor = System.Drawing.Color.Aquamarine;
+            this.myGridView1.Appearance.Row.BackColor2 = System.Drawing.Color.LightGreen;
+            this.myGridView1.Appearance.Row.Options.UseBackColor = true;
             this.myGridView1.Appearance.ViewCaption.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);
             this.myGridView1.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Black;
             this.myGridView1.Appearance.ViewCaption.Options.UseFont = true;
@@ -149,6 +152,7 @@
             this.myGridView1.OptionsView.ShowGroupPanel = false;
             this.myGridView1.OptionsView.ShowViewCaption = true;
             this.myGridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.myGridView1_FocusedRowChanged);
+            this.myGridView1.DoubleClick += new System.EventHandler(this.myGridView1_DoubleClick);
             // 
             // colID
             // 
