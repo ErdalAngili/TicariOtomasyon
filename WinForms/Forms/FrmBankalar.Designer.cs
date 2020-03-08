@@ -98,6 +98,9 @@
             this.myGridView1.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.myGridView1.Appearance.HeaderPanel.Options.UseTextOptions = true;
             this.myGridView1.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.myGridView1.Appearance.Row.BackColor = System.Drawing.Color.Aquamarine;
+            this.myGridView1.Appearance.Row.BackColor2 = System.Drawing.Color.LightGreen;
+            this.myGridView1.Appearance.Row.Options.UseBackColor = true;
             this.myGridView1.Appearance.ViewCaption.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);
             this.myGridView1.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Black;
             this.myGridView1.Appearance.ViewCaption.Options.UseFont = true;
@@ -275,8 +278,8 @@
             this.BtnTemizle.Location = new System.Drawing.Point(113, 616);
             this.BtnTemizle.Name = "BtnTemizle";
             this.BtnTemizle.Size = new System.Drawing.Size(194, 36);
-            this.BtnTemizle.TabIndex = 43;
-            this.BtnTemizle.Text = "Temizle";
+            this.BtnTemizle.TabIndex = 15;
+            this.BtnTemizle.Text = "Alanları Temizle";
             this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // TxtYetkili
@@ -286,7 +289,7 @@
             this.TxtYetkili.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtYetkili.Properties.Appearance.Options.UseFont = true;
             this.TxtYetkili.Size = new System.Drawing.Size(194, 26);
-            this.TxtYetkili.TabIndex = 42;
+            this.TxtYetkili.TabIndex = 7;
             // 
             // lookFirma
             // 
@@ -298,7 +301,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookFirma.Properties.NullText = "Lütfen Firma Seçiniz";
             this.lookFirma.Size = new System.Drawing.Size(194, 26);
-            this.lookFirma.TabIndex = 41;
+            this.lookFirma.TabIndex = 11;
             // 
             // labelControl8
             // 
@@ -327,7 +330,7 @@
             this.MaskTarih.Mask = "00/00/0000";
             this.MaskTarih.Name = "MaskTarih";
             this.MaskTarih.Size = new System.Drawing.Size(194, 25);
-            this.MaskTarih.TabIndex = 37;
+            this.MaskTarih.TabIndex = 9;
             this.MaskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // MaskHesap
@@ -336,7 +339,7 @@
             this.MaskHesap.Location = new System.Drawing.Point(113, 220);
             this.MaskHesap.Name = "MaskHesap";
             this.MaskHesap.Size = new System.Drawing.Size(194, 25);
-            this.MaskHesap.TabIndex = 36;
+            this.MaskHesap.TabIndex = 6;
             this.MaskHesap.ValidatingType = typeof(int);
             // 
             // labelControl11
@@ -356,7 +359,7 @@
             this.Comilce.Location = new System.Drawing.Point(113, 108);
             this.Comilce.Name = "Comilce";
             this.Comilce.Size = new System.Drawing.Size(194, 28);
-            this.Comilce.TabIndex = 32;
+            this.Comilce.TabIndex = 3;
             // 
             // Comil
             // 
@@ -365,7 +368,7 @@
             this.Comil.Location = new System.Drawing.Point(113, 69);
             this.Comil.Name = "Comil";
             this.Comil.Size = new System.Drawing.Size(194, 28);
-            this.Comil.TabIndex = 31;
+            this.Comil.TabIndex = 2;
             this.Comil.SelectedIndexChanged += new System.EventHandler(this.Comil_SelectedIndexChanged);
             // 
             // MaskIban
@@ -374,7 +377,7 @@
             this.MaskIban.Location = new System.Drawing.Point(113, 184);
             this.MaskIban.Name = "MaskIban";
             this.MaskIban.Size = new System.Drawing.Size(194, 25);
-            this.MaskIban.TabIndex = 29;
+            this.MaskIban.TabIndex = 5;
             this.MaskIban.ValidatingType = typeof(int);
             // 
             // TxtHesapTuru
@@ -384,7 +387,7 @@
             this.TxtHesapTuru.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtHesapTuru.Properties.Appearance.Options.UseFont = true;
             this.TxtHesapTuru.Size = new System.Drawing.Size(194, 26);
-            this.TxtHesapTuru.TabIndex = 28;
+            this.TxtHesapTuru.TabIndex = 10;
             // 
             // labelControl10
             // 
@@ -424,7 +427,7 @@
             this.BtnSil.Location = new System.Drawing.Point(113, 568);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(194, 36);
-            this.BtnSil.TabIndex = 23;
+            this.BtnSil.TabIndex = 14;
             this.BtnSil.Text = "Sil";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
@@ -436,7 +439,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(112, 520);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(194, 36);
-            this.BtnGuncelle.TabIndex = 22;
+            this.BtnGuncelle.TabIndex = 13;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -448,7 +451,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(113, 472);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(194, 36);
-            this.BtnKaydet.TabIndex = 21;
+            this.BtnKaydet.TabIndex = 12;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
@@ -479,7 +482,7 @@
             this.MskTelefon.Mask = "(999) 000-0000";
             this.MskTelefon.Name = "MskTelefon";
             this.MskTelefon.Size = new System.Drawing.Size(194, 25);
-            this.MskTelefon.TabIndex = 12;
+            this.MskTelefon.TabIndex = 8;
             // 
             // labelControl4
             // 

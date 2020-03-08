@@ -21,7 +21,7 @@ namespace WinForms.Forms
         }
 
         sqlbaglanti sqlbaglanti = new sqlbaglanti();
-
+        FrmFaturaUrun faturaUrun = new FrmFaturaUrun();
         void Listele()
         {
             SqlDataAdapter adapter = new SqlDataAdapter("Select * from FATURABILGI",sqlbaglanti.baglanti());
@@ -136,27 +136,34 @@ namespace WinForms.Forms
         {
             Temizle();
         }
-
+        
         private void BtnSil_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Faturayı Silmek istiyor musunuz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Faturayı Detayı Silmek istiyor musunuz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                SqlCommand komut = new SqlCommand("Delete from FATURABILGI where FATURABILGIID=@p1", sqlbaglanti.baglanti());
-                komut.Parameters.AddWithValue("@p1", TxtFaturaBilgiID.Text);
-                komut.ExecuteNonQuery();
+                SqlCommand komut2 = new SqlCommand("Delete from FATURADETAY where FATURAID=@p2", sqlbaglanti.baglanti());
+                komut2.Parameters.AddWithValue("@p2", TxtFaturaBilgiID.Text);
+                komut2.ExecuteNonQuery();
                 MessageBox.Show("Fatura Silindi.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 sqlbaglanti.baglanti().Close();
-                Listele();
-                FirmaListele();
-                Temizle();
+                if (MessageBox.Show("Faturayı Silmek istiyor musunuz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    SqlCommand komut = new SqlCommand("Delete from FATURABILGI where FATURABILGIID=@p1", sqlbaglanti.baglanti());
+                    komut.Parameters.AddWithValue("@p1", TxtFaturaBilgiID.Text);
+                    komut.ExecuteNonQuery();
+                    MessageBox.Show("Fatura Silindi.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    sqlbaglanti.baglanti().Close();
+                    Listele();
+                    FirmaListele();
+                    Temizle();
+                }
             }
             else
             {
-                MessageBox.Show("Silme İşlemi İptal Edildi", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                Listele();
-                FirmaListele();
+                    MessageBox.Show("Silme İşlemi İptal Edildi", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Listele();
+                    FirmaListele();
             }
-
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)

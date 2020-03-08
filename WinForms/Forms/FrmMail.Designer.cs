@@ -47,7 +47,7 @@
             this.RichMesaj.Location = new System.Drawing.Point(105, 191);
             this.RichMesaj.Name = "RichMesaj";
             this.RichMesaj.Size = new System.Drawing.Size(299, 218);
-            this.RichMesaj.TabIndex = 15;
+            this.RichMesaj.TabIndex = 3;
             this.RichMesaj.Text = "";
             // 
             // labelControl3
@@ -67,7 +67,7 @@
             this.TxtBaslik.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtBaslik.Properties.Appearance.Options.UseFont = true;
             this.TxtBaslik.Size = new System.Drawing.Size(299, 26);
-            this.TxtBaslik.TabIndex = 13;
+            this.TxtBaslik.TabIndex = 2;
             // 
             // labelControl1
             // 
@@ -86,7 +86,7 @@
             this.TxtMailAdres.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtMailAdres.Properties.Appearance.Options.UseFont = true;
             this.TxtMailAdres.Size = new System.Drawing.Size(299, 26);
-            this.TxtMailAdres.TabIndex = 11;
+            this.TxtMailAdres.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -106,7 +106,7 @@
             this.BtnGonder.Location = new System.Drawing.Point(140, 429);
             this.BtnGonder.Name = "BtnGonder";
             this.BtnGonder.Size = new System.Drawing.Size(243, 35);
-            this.BtnGonder.TabIndex = 16;
+            this.BtnGonder.TabIndex = 4;
             this.BtnGonder.Text = "Gönder";
             this.BtnGonder.Click += new System.EventHandler(this.BtnGonder_Click);
             // 

@@ -277,7 +277,7 @@
             this.btnAlanTemizle.Location = new System.Drawing.Point(141, 134);
             this.btnAlanTemizle.Name = "btnAlanTemizle";
             this.btnAlanTemizle.Size = new System.Drawing.Size(194, 36);
-            this.btnAlanTemizle.TabIndex = 37;
+            this.btnAlanTemizle.TabIndex = 11;
             this.btnAlanTemizle.Text = "Alanları Temizle";
             this.btnAlanTemizle.Click += new System.EventHandler(this.btnAlanTemizle_Click);
             // 
@@ -289,7 +289,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(141, 39);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(194, 36);
-            this.BtnGuncelle.TabIndex = 35;
+            this.BtnGuncelle.TabIndex = 9;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -301,7 +301,7 @@
             this.BtnSil.Location = new System.Drawing.Point(141, 86);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(194, 36);
-            this.BtnSil.TabIndex = 36;
+            this.BtnSil.TabIndex = 10;
             this.BtnSil.Text = "Sil";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
@@ -338,7 +338,7 @@
             this.TxtTeslimAlan.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtTeslimAlan.Properties.Appearance.Options.UseFont = true;
             this.TxtTeslimAlan.Size = new System.Drawing.Size(194, 26);
-            this.TxtTeslimAlan.TabIndex = 33;
+            this.TxtTeslimAlan.TabIndex = 8;
             // 
             // TxtTeslimEden
             // 
@@ -347,7 +347,7 @@
             this.TxtTeslimEden.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtTeslimEden.Properties.Appearance.Options.UseFont = true;
             this.TxtTeslimEden.Size = new System.Drawing.Size(194, 26);
-            this.TxtTeslimEden.TabIndex = 32;
+            this.TxtTeslimEden.TabIndex = 7;
             // 
             // TxtAlici
             // 
@@ -356,7 +356,7 @@
             this.TxtAlici.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtAlici.Properties.Appearance.Options.UseFont = true;
             this.TxtAlici.Size = new System.Drawing.Size(194, 26);
-            this.TxtAlici.TabIndex = 31;
+            this.TxtAlici.TabIndex = 6;
             // 
             // labelControl13
             // 
@@ -410,7 +410,7 @@
             this.MaskTarih.Mask = "00/00/0000";
             this.MaskTarih.Name = "MaskTarih";
             this.MaskTarih.Size = new System.Drawing.Size(194, 25);
-            this.MaskTarih.TabIndex = 35;
+            this.MaskTarih.TabIndex = 3;
             this.MaskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // MaskSaat
@@ -420,7 +420,7 @@
             this.MaskSaat.Mask = "90:00";
             this.MaskSaat.Name = "MaskSaat";
             this.MaskSaat.Size = new System.Drawing.Size(194, 25);
-            this.MaskSaat.TabIndex = 35;
+            this.MaskSaat.TabIndex = 4;
             this.MaskSaat.ValidatingType = typeof(System.DateTime);
             // 
             // TxtVergiDairesi
@@ -430,7 +430,7 @@
             this.TxtVergiDairesi.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtVergiDairesi.Properties.Appearance.Options.UseFont = true;
             this.TxtVergiDairesi.Size = new System.Drawing.Size(194, 26);
-            this.TxtVergiDairesi.TabIndex = 11;
+            this.TxtVergiDairesi.TabIndex = 5;
             // 
             // labelControl12
             // 
@@ -493,7 +493,7 @@
             this.TxtSeri.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSeri.Properties.Appearance.Options.UseFont = true;
             this.TxtSeri.Size = new System.Drawing.Size(194, 26);
-            this.TxtSeri.TabIndex = 7;
+            this.TxtSeri.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -512,7 +512,7 @@
             this.TxtSıraNo.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSıraNo.Properties.Appearance.Options.UseFont = true;
             this.TxtSıraNo.Size = new System.Drawing.Size(194, 26);
-            this.TxtSıraNo.TabIndex = 9;
+            this.TxtSıraNo.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -560,7 +560,7 @@
             this.TxtTutar.Properties.Mask.EditMask = "c";
             this.TxtTutar.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.TxtTutar.Size = new System.Drawing.Size(194, 26);
-            this.TxtTutar.TabIndex = 43;
+            this.TxtTutar.TabIndex = 4;
             this.TxtTutar.Click += new System.EventHandler(this.TxtTutar_Click);
             // 
             // lookFirma
@@ -573,7 +573,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookFirma.Properties.NullText = "Lütfen Firma Seçiniz";
             this.lookFirma.Size = new System.Drawing.Size(194, 26);
-            this.lookFirma.TabIndex = 42;
+            this.lookFirma.TabIndex = 5;
             // 
             // labelControl10
             // 
@@ -614,7 +614,7 @@
             this.MaskFiyat.Properties.Mask.EditMask = "c";
             this.MaskFiyat.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.MaskFiyat.Size = new System.Drawing.Size(194, 26);
-            this.MaskFiyat.TabIndex = 28;
+            this.MaskFiyat.TabIndex = 3;
             // 
             // labelControl6
             // 
@@ -635,7 +635,7 @@
             this.MaskMiktar.Properties.Mask.EditMask = "d";
             this.MaskMiktar.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.MaskMiktar.Size = new System.Drawing.Size(194, 26);
-            this.MaskMiktar.TabIndex = 26;
+            this.MaskMiktar.TabIndex = 2;
             // 
             // labelControl5
             // 
@@ -654,7 +654,7 @@
             this.TxtUrunAd.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtUrunAd.Properties.Appearance.Options.UseFont = true;
             this.TxtUrunAd.Size = new System.Drawing.Size(194, 26);
-            this.TxtUrunAd.TabIndex = 24;
+            this.TxtUrunAd.TabIndex = 1;
             // 
             // BtnKaydet
             // 
@@ -664,7 +664,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(141, 228);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(194, 36);
-            this.BtnKaydet.TabIndex = 21;
+            this.BtnKaydet.TabIndex = 6;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 

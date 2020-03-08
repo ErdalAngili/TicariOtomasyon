@@ -159,5 +159,10 @@ namespace WinForms.Forms
                 PersonelListele();
             }
         }
+
+        private void btnAlanTemizle_Click(object sender, EventArgs e)
+        {
+            Temizle();
+        }
     }
 }

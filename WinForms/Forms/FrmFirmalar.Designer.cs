@@ -51,6 +51,7 @@
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.MaskMail = new WinForms.UserControl.MyTextMail.MyTextMail();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.MaskFax = new System.Windows.Forms.MaskedTextBox();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
@@ -102,7 +103,6 @@
             this.TxtKodiki = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.TxtKodBir = new DevExpress.XtraEditors.TextEdit();
-            this.MaskMail = new WinForms.UserControl.MyTextMail.MyTextMail();
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -110,6 +110,7 @@
             this.xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MaskMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtYetkılıstatu.Properties)).BeginInit();
@@ -136,7 +137,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodUc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodiki.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodBir.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MaskMail.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // myGridControl1
@@ -155,6 +155,9 @@
             this.myGridView1.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.myGridView1.Appearance.HeaderPanel.Options.UseTextOptions = true;
             this.myGridView1.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.myGridView1.Appearance.Row.BackColor = System.Drawing.Color.Aquamarine;
+            this.myGridView1.Appearance.Row.BackColor2 = System.Drawing.Color.LightGreen;
+            this.myGridView1.Appearance.Row.Options.UseBackColor = true;
             this.myGridView1.Appearance.ViewCaption.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);
             this.myGridView1.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Black;
             this.myGridView1.Appearance.ViewCaption.Options.UseFont = true;
@@ -384,6 +387,20 @@
             this.groupControl4.TabIndex = 3;
             this.groupControl4.Text = "groupControl4";
             // 
+            // MaskMail
+            // 
+            this.MaskMail.Location = new System.Drawing.Point(141, 162);
+            this.MaskMail.Name = "MaskMail";
+            this.MaskMail.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.MaskMail.Properties.Appearance.Options.UseFont = true;
+            this.MaskMail.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
+            this.MaskMail.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+    "-])+)+";
+            this.MaskMail.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.MaskMail.Properties.MaxLength = 50;
+            this.MaskMail.Size = new System.Drawing.Size(194, 26);
+            this.MaskMail.TabIndex = 10;
+            // 
             // labelControl15
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -401,7 +418,7 @@
             this.MaskFax.Mask = "(999) 000-0000";
             this.MaskFax.Name = "MaskFax";
             this.MaskFax.Size = new System.Drawing.Size(194, 25);
-            this.MaskFax.TabIndex = 33;
+            this.MaskFax.TabIndex = 9;
             // 
             // labelControl14
             // 
@@ -420,7 +437,7 @@
             this.MaskTelefonUc.Mask = "(999) 000-0000";
             this.MaskTelefonUc.Name = "MaskTelefonUc";
             this.MaskTelefonUc.Size = new System.Drawing.Size(194, 25);
-            this.MaskTelefonUc.TabIndex = 31;
+            this.MaskTelefonUc.TabIndex = 8;
             // 
             // labelControl13
             // 
@@ -439,7 +456,7 @@
             this.MaskTelefonIki.Mask = "(999) 000-0000";
             this.MaskTelefonIki.Name = "MaskTelefonIki";
             this.MaskTelefonIki.Size = new System.Drawing.Size(194, 25);
-            this.MaskTelefonIki.TabIndex = 12;
+            this.MaskTelefonIki.TabIndex = 7;
             // 
             // labelControl3
             // 
@@ -468,7 +485,7 @@
             this.MaskTelefon.Mask = "(999) 000-0000";
             this.MaskTelefon.Name = "MaskTelefon";
             this.MaskTelefon.Size = new System.Drawing.Size(194, 25);
-            this.MaskTelefon.TabIndex = 29;
+            this.MaskTelefon.TabIndex = 6;
             // 
             // groupControl3
             // 
@@ -492,7 +509,7 @@
             this.TxtYetkılıstatu.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtYetkılıstatu.Properties.Appearance.Options.UseFont = true;
             this.TxtYetkılıstatu.Size = new System.Drawing.Size(194, 26);
-            this.TxtYetkılıstatu.TabIndex = 5;
+            this.TxtYetkılıstatu.TabIndex = 4;
             // 
             // labelControl12
             // 
@@ -530,7 +547,7 @@
             this.MaskTC.Mask = "00000000000";
             this.MaskTC.Name = "MaskTC";
             this.MaskTC.Size = new System.Drawing.Size(194, 25);
-            this.MaskTC.TabIndex = 30;
+            this.MaskTC.TabIndex = 5;
             this.MaskTC.ValidatingType = typeof(int);
             // 
             // labelControl9
@@ -574,7 +591,7 @@
             this.TxtAd.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtAd.Properties.Appearance.Options.UseFont = true;
             this.TxtAd.Size = new System.Drawing.Size(194, 26);
-            this.TxtAd.TabIndex = 7;
+            this.TxtAd.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -588,18 +605,18 @@
             // 
             // TxtSektor
             // 
-            this.TxtSektor.Location = new System.Drawing.Point(141, 68);
+            this.TxtSektor.Location = new System.Drawing.Point(141, 72);
             this.TxtSektor.Name = "TxtSektor";
             this.TxtSektor.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSektor.Properties.Appearance.Options.UseFont = true;
             this.TxtSektor.Size = new System.Drawing.Size(194, 26);
-            this.TxtSektor.TabIndex = 9;
+            this.TxtSektor.TabIndex = 2;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(77, 71);
+            this.labelControl2.Location = new System.Drawing.Point(77, 75);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(58, 20);
             this.labelControl2.TabIndex = 8;
@@ -639,7 +656,7 @@
             this.Comilce.Location = new System.Drawing.Point(141, 68);
             this.Comilce.Name = "Comilce";
             this.Comilce.Size = new System.Drawing.Size(194, 28);
-            this.Comilce.TabIndex = 32;
+            this.Comilce.TabIndex = 2;
             // 
             // labelControl7
             // 
@@ -658,7 +675,7 @@
             this.TxtVergiDaire.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtVergiDaire.Properties.Appearance.Options.UseFont = true;
             this.TxtVergiDaire.Size = new System.Drawing.Size(194, 26);
-            this.TxtVergiDaire.TabIndex = 28;
+            this.TxtVergiDaire.TabIndex = 3;
             // 
             // BtnSil
             // 
@@ -668,7 +685,7 @@
             this.BtnSil.Location = new System.Drawing.Point(141, 405);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(194, 36);
-            this.BtnSil.TabIndex = 23;
+            this.BtnSil.TabIndex = 7;
             this.BtnSil.Text = "Sil";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
@@ -680,7 +697,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(141, 358);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(194, 36);
-            this.BtnGuncelle.TabIndex = 22;
+            this.BtnGuncelle.TabIndex = 6;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -702,7 +719,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(141, 311);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(194, 36);
-            this.BtnKaydet.TabIndex = 21;
+            this.BtnKaydet.TabIndex = 5;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
@@ -723,7 +740,7 @@
             this.Comil.Location = new System.Drawing.Point(141, 34);
             this.Comil.Name = "Comil";
             this.Comil.Size = new System.Drawing.Size(194, 28);
-            this.Comil.TabIndex = 31;
+            this.Comil.TabIndex = 1;
             this.Comil.SelectedIndexChanged += new System.EventHandler(this.Comil_SelectedIndexChanged);
             // 
             // RichAdres
@@ -732,7 +749,7 @@
             this.RichAdres.Location = new System.Drawing.Point(141, 134);
             this.RichAdres.Name = "RichAdres";
             this.RichAdres.Size = new System.Drawing.Size(194, 156);
-            this.RichAdres.TabIndex = 20;
+            this.RichAdres.TabIndex = 4;
             this.RichAdres.Text = "";
             // 
             // labelControl8
@@ -768,7 +785,7 @@
             this.xtraTabControl2.Name = "xtraTabControl2";
             this.xtraTabControl2.SelectedTabPage = this.xtraTabPage4;
             this.xtraTabControl2.Size = new System.Drawing.Size(351, 309);
-            this.xtraTabControl2.TabIndex = 0;
+            this.xtraTabControl2.TabIndex = 6;
             this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage4,
             this.xtraTabPage5,
@@ -854,7 +871,7 @@
             this.TxtKodUc.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtKodUc.Properties.Appearance.Options.UseFont = true;
             this.TxtKodUc.Size = new System.Drawing.Size(194, 26);
-            this.TxtKodUc.TabIndex = 6;
+            this.TxtKodUc.TabIndex = 3;
             // 
             // labelControl17
             // 
@@ -873,7 +890,7 @@
             this.TxtKodiki.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtKodiki.Properties.Appearance.Options.UseFont = true;
             this.TxtKodiki.Size = new System.Drawing.Size(194, 26);
-            this.TxtKodiki.TabIndex = 4;
+            this.TxtKodiki.TabIndex = 2;
             // 
             // labelControl16
             // 
@@ -892,21 +909,7 @@
             this.TxtKodBir.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtKodBir.Properties.Appearance.Options.UseFont = true;
             this.TxtKodBir.Size = new System.Drawing.Size(194, 26);
-            this.TxtKodBir.TabIndex = 2;
-            // 
-            // MaskMail
-            // 
-            this.MaskMail.Location = new System.Drawing.Point(141, 162);
-            this.MaskMail.Name = "MaskMail";
-            this.MaskMail.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
-            this.MaskMail.Properties.Appearance.Options.UseFont = true;
-            this.MaskMail.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
-            this.MaskMail.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
-    "-])+)+";
-            this.MaskMail.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.MaskMail.Properties.MaxLength = 50;
-            this.MaskMail.Size = new System.Drawing.Size(194, 26);
-            this.MaskMail.TabIndex = 36;
+            this.TxtKodBir.TabIndex = 1;
             // 
             // FrmFirmalar
             // 
@@ -927,6 +930,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MaskMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
@@ -957,7 +961,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodUc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodiki.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKodBir.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MaskMail.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

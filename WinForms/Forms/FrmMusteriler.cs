@@ -71,7 +71,6 @@ namespace WinForms.Forms
             }
             sqlbaglanti.baglanti().Close();
         }
-
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
 
@@ -162,6 +161,11 @@ namespace WinForms.Forms
                 RichAdres.Text = dr["ADRES"].ToString();
                 TxtVergiDaire.Text = dr["VERGIDAIRE"].ToString();
             }
+        }
+
+        private void btnAlanTemizle_Click(object sender, EventArgs e)
+        {
+            Temizle();
         }
     }
 }

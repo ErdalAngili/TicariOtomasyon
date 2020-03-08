@@ -96,5 +96,15 @@ namespace WinForms.Forms
                 frmFaturalar.Show();
             }
         }
+        FrmNotlar frmNotlar;
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmNotlar==null)
+            {
+                frmNotlar = new FrmNotlar();
+                frmNotlar.MdiParent = this;
+                frmNotlar.Show();
+            }
+        }
     }
 }

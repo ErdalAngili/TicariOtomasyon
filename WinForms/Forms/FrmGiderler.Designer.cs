@@ -114,7 +114,7 @@
             this.TxtEkstra.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtEkstra.Properties.Appearance.Options.UseFont = true;
             this.TxtEkstra.Size = new System.Drawing.Size(194, 26);
-            this.TxtEkstra.TabIndex = 42;
+            this.TxtEkstra.TabIndex = 8;
             // 
             // TxtMaas
             // 
@@ -123,7 +123,7 @@
             this.TxtMaas.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtMaas.Properties.Appearance.Options.UseFont = true;
             this.TxtMaas.Size = new System.Drawing.Size(194, 26);
-            this.TxtMaas.TabIndex = 41;
+            this.TxtMaas.TabIndex = 7;
             // 
             // TxtInternet
             // 
@@ -132,7 +132,7 @@
             this.TxtInternet.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtInternet.Properties.Appearance.Options.UseFont = true;
             this.TxtInternet.Size = new System.Drawing.Size(194, 26);
-            this.TxtInternet.TabIndex = 40;
+            this.TxtInternet.TabIndex = 6;
             // 
             // TxtDogalgaz
             // 
@@ -141,7 +141,7 @@
             this.TxtDogalgaz.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtDogalgaz.Properties.Appearance.Options.UseFont = true;
             this.TxtDogalgaz.Size = new System.Drawing.Size(194, 26);
-            this.TxtDogalgaz.TabIndex = 39;
+            this.TxtDogalgaz.TabIndex = 5;
             // 
             // TxtSu
             // 
@@ -150,7 +150,7 @@
             this.TxtSu.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSu.Properties.Appearance.Options.UseFont = true;
             this.TxtSu.Size = new System.Drawing.Size(194, 26);
-            this.TxtSu.TabIndex = 38;
+            this.TxtSu.TabIndex = 4;
             // 
             // TxtElektrik
             // 
@@ -159,7 +159,7 @@
             this.TxtElektrik.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtElektrik.Properties.Appearance.Options.UseFont = true;
             this.TxtElektrik.Size = new System.Drawing.Size(194, 26);
-            this.TxtElektrik.TabIndex = 37;
+            this.TxtElektrik.TabIndex = 3;
             // 
             // comYıl
             // 
@@ -172,7 +172,7 @@
             this.comYıl.Location = new System.Drawing.Point(112, 69);
             this.comYıl.Name = "comYıl";
             this.comYıl.Size = new System.Drawing.Size(194, 28);
-            this.comYıl.TabIndex = 36;
+            this.comYıl.TabIndex = 2;
             // 
             // comAy
             // 
@@ -194,17 +194,17 @@
             this.comAy.Location = new System.Drawing.Point(113, 32);
             this.comAy.Name = "comAy";
             this.comAy.Size = new System.Drawing.Size(194, 28);
-            this.comAy.TabIndex = 35;
+            this.comAy.TabIndex = 1;
             // 
             // simpleButton1
             // 
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.ImageOptions.SvgImage = global::WinForms.Properties.Resources.removedataitems;
-            this.simpleButton1.Location = new System.Drawing.Point(113, 597);
+            this.simpleButton1.Location = new System.Drawing.Point(113, 599);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(194, 33);
-            this.simpleButton1.TabIndex = 34;
+            this.simpleButton1.TabIndex = 13;
             this.simpleButton1.Text = "Alanları Temizle";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
@@ -236,7 +236,7 @@
             this.BtnSil.Location = new System.Drawing.Point(114, 558);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(194, 33);
-            this.BtnSil.TabIndex = 23;
+            this.BtnSil.TabIndex = 12;
             this.BtnSil.Text = "Sil";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
@@ -248,7 +248,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(114, 517);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(194, 33);
-            this.BtnGuncelle.TabIndex = 22;
+            this.BtnGuncelle.TabIndex = 11;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -260,7 +260,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(114, 476);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(194, 33);
-            this.BtnKaydet.TabIndex = 21;
+            this.BtnKaydet.TabIndex = 10;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
@@ -270,7 +270,7 @@
             this.RichNot.Location = new System.Drawing.Point(113, 331);
             this.RichNot.Name = "RichNot";
             this.RichNot.Size = new System.Drawing.Size(194, 118);
-            this.RichNot.TabIndex = 20;
+            this.RichNot.TabIndex = 9;
             this.RichNot.Text = "";
             // 
             // labelControl9
@@ -369,6 +369,9 @@
             this.myGridView1.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.myGridView1.Appearance.HeaderPanel.Options.UseTextOptions = true;
             this.myGridView1.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.myGridView1.Appearance.Row.BackColor = System.Drawing.Color.Aquamarine;
+            this.myGridView1.Appearance.Row.BackColor2 = System.Drawing.Color.LightGreen;
+            this.myGridView1.Appearance.Row.Options.UseBackColor = true;
             this.myGridView1.Appearance.ViewCaption.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);
             this.myGridView1.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Black;
             this.myGridView1.Appearance.ViewCaption.Options.UseFont = true;

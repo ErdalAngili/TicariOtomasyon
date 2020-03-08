@@ -63,6 +63,7 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TxtAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.btnAlanTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -90,6 +91,9 @@
             this.myGridView1.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.myGridView1.Appearance.HeaderPanel.Options.UseTextOptions = true;
             this.myGridView1.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.myGridView1.Appearance.Row.BackColor = System.Drawing.Color.Aquamarine;
+            this.myGridView1.Appearance.Row.BackColor2 = System.Drawing.Color.LightGreen;
+            this.myGridView1.Appearance.Row.Options.UseBackColor = true;
             this.myGridView1.Appearance.ViewCaption.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold);
             this.myGridView1.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Black;
             this.myGridView1.Appearance.ViewCaption.Options.UseFont = true;
@@ -207,6 +211,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnAlanTemizle);
             this.groupControl1.Controls.Add(this.TxtMail);
             this.groupControl1.Controls.Add(this.Comilce);
             this.groupControl1.Controls.Add(this.Comil);
@@ -458,6 +463,18 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Ad:";
             // 
+            // btnAlanTemizle
+            // 
+            this.btnAlanTemizle.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAlanTemizle.Appearance.Options.UseFont = true;
+            this.btnAlanTemizle.ImageOptions.SvgImage = global::WinForms.Properties.Resources.clearall;
+            this.btnAlanTemizle.Location = new System.Drawing.Point(113, 640);
+            this.btnAlanTemizle.Name = "btnAlanTemizle";
+            this.btnAlanTemizle.Size = new System.Drawing.Size(194, 36);
+            this.btnAlanTemizle.TabIndex = 38;
+            this.btnAlanTemizle.Text = "Alanları Temizle";
+            this.btnAlanTemizle.Click += new System.EventHandler(this.btnAlanTemizle_Click);
+            // 
             // FrmPersoneller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -520,5 +537,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn ColILCE;
         private DevExpress.XtraGrid.Columns.GridColumn ColADRES;
         private DevExpress.XtraGrid.Columns.GridColumn ColGOREV;
+        private DevExpress.XtraEditors.SimpleButton btnAlanTemizle;
     }
 }

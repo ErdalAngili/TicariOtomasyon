@@ -87,7 +87,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(115, 189);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(194, 36);
-            this.BtnGuncelle.TabIndex = 44;
+            this.BtnGuncelle.TabIndex = 5;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -99,7 +99,7 @@
             this.BtnSil.Location = new System.Drawing.Point(115, 236);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(194, 36);
-            this.BtnSil.TabIndex = 45;
+            this.BtnSil.TabIndex = 6;
             this.BtnSil.Text = "Sil";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
@@ -112,7 +112,7 @@
             this.TxtTutar.Properties.Mask.EditMask = "c";
             this.TxtTutar.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.TxtTutar.Size = new System.Drawing.Size(194, 26);
-            this.TxtTutar.TabIndex = 43;
+            this.TxtTutar.TabIndex = 4;
             // 
             // labelControl8
             // 
@@ -143,7 +143,7 @@
             this.MaskFiyat.Properties.Mask.EditMask = "c";
             this.MaskFiyat.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.MaskFiyat.Size = new System.Drawing.Size(194, 26);
-            this.MaskFiyat.TabIndex = 28;
+            this.MaskFiyat.TabIndex = 3;
             // 
             // labelControl6
             // 
@@ -164,7 +164,7 @@
             this.MaskMiktar.Properties.Mask.EditMask = "d";
             this.MaskMiktar.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.MaskMiktar.Size = new System.Drawing.Size(194, 26);
-            this.MaskMiktar.TabIndex = 26;
+            this.MaskMiktar.TabIndex = 2;
             // 
             // labelControl5
             // 
@@ -183,7 +183,7 @@
             this.TxtUrunAd.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtUrunAd.Properties.Appearance.Options.UseFont = true;
             this.TxtUrunAd.Size = new System.Drawing.Size(194, 26);
-            this.TxtUrunAd.TabIndex = 24;
+            this.TxtUrunAd.TabIndex = 1;
             // 
             // FrmFaturaUrunDüzenleme
             // 

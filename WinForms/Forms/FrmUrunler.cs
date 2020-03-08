@@ -124,5 +124,10 @@ namespace WinForms.Forms
             TxtSatis.Text = dr["SATISFIYAT"].ToString();
             RichDetay.Text = dr["DETAY"].ToString();
         }
+
+        private void btnAlanTemizle_Click(object sender, EventArgs e)
+        {
+            Temizle();
+        }
     }
 }
