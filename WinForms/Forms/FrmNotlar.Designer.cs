@@ -375,7 +375,7 @@
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.myGridControl1);
             this.Name = "FrmNotlar";
-            this.Text = "FrmNotlar";
+            this.Text = "Notlar";
             this.Load += new System.EventHandler(this.FrmNotlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).EndInit();

@@ -96,6 +96,12 @@
     <Compile Include="Forms\FrmGiderler.Designer.cs">
       <DependentUpon>FrmGiderler.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmHareketler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHareketler.Designer.cs">
+      <DependentUpon>FrmHareketler.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmIletisim.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmGiderler.resx">
       <DependentUpon>FrmGiderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHareketler.resx">
+      <DependentUpon>FrmHareketler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmIletisim.resx">
       <DependentUpon>FrmIletisim.cs</DependentUpon>

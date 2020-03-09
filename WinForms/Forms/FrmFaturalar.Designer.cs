@@ -676,7 +676,7 @@
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.myGridControl1);
             this.Name = "FrmFaturalar";
-            this.Text = "FrmFaturalar";
+            this.Text = "Faturalar";
             this.Load += new System.EventHandler(this.FrmFaturalar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).EndInit();

@@ -106,5 +106,15 @@ namespace WinForms.Forms
                 frmNotlar.Show();
             }
         }
+        FrmHareketler frmHareketler;
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmHareketler==null)
+            {
+                frmHareketler = new FrmHareketler();
+                frmHareketler.MdiParent = this;
+                frmHareketler.Show();
+            }
+        }
     }
 }

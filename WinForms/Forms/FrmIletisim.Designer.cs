@@ -73,9 +73,11 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Appearance.Header.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xtraTabPage1.Appearance.Header.Options.UseFont = true;
             this.xtraTabPage1.Controls.Add(this.myGridControl1);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1898, 1013);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1898, 1012);
             this.xtraTabPage1.Text = "Müşteriler";
             // 
             // myGridControl1
@@ -174,6 +176,8 @@
             // 
             // xtraTabPage2
             // 
+            this.xtraTabPage2.Appearance.Header.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xtraTabPage2.Appearance.Header.Options.UseFont = true;
             this.xtraTabPage2.Controls.Add(this.myGridControl2);
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(1898, 1013);
@@ -300,7 +304,7 @@
             this.ClientSize = new System.Drawing.Size(1910, 1048);
             this.Controls.Add(this.xtraTabControl1);
             this.Name = "FrmIletisim";
-            this.Text = "FrmIletisim";
+            this.Text = "İletişim";
             this.Load += new System.EventHandler(this.FrmIletisim_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);

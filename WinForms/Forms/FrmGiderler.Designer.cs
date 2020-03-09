@@ -495,7 +495,7 @@
             this.Controls.Add(this.myGridControl1);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmGiderler";
-            this.Text = "FrmGiderler";
+            this.Text = "Giderler";
             this.Load += new System.EventHandler(this.FrmGiderler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
