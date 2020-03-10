@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FrmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAdmin.Designer.cs">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmAnaModul.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,12 @@
     <Compile Include="Forms\FrmPersoneller.Designer.cs">
       <DependentUpon>FrmPersoneller.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmSayac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSayac.Designer.cs">
+      <DependentUpon>FrmSayac.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmUrunler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,12 +158,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\MyGridControl\MyGridControl.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UserControl\MyTextMail\MyTextMail.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="Forms\FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmAnaModul.resx">
       <DependentUpon>FrmAnaModul.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,20 +214,18 @@
     <EmbeddedResource Include="Forms\FrmPersoneller.resx">
       <DependentUpon>FrmPersoneller.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSayac.resx">
+      <DependentUpon>FrmSayac.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmUrunler.resx">
       <DependentUpon>FrmUrunler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -340,6 +358,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\textbox_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commerce.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trade.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -173,6 +173,26 @@ namespace WinForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap commerce {
+            get {
+                object obj = ResourceManager.GetObject("commerce", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap commerce1 {
+            get {
+                object obj = ResourceManager.GetObject("commerce1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap convert_32x32 {
             get {
                 object obj = ResourceManager.GetObject("convert_32x32", resourceCulture);
@@ -416,6 +436,26 @@ namespace WinForms.Properties {
         internal static System.Drawing.Bitmap textbox_32x32 {
             get {
                 object obj = ResourceManager.GetObject("textbox_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trade {
+            get {
+                object obj = ResourceManager.GetObject("trade", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trade1 {
+            get {
+                object obj = ResourceManager.GetObject("trade1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
