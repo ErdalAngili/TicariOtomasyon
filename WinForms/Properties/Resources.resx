@@ -139,8 +139,8 @@
   <data name="properties_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\properties_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="newappointment" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\newappointment.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="properties_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\properties_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="textbox_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\textbox_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +157,8 @@
   <data name="removedataitems" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\removedataitems.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="save_32x322" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_32x322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mail_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mail_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -168,6 +168,9 @@
   </data>
   <data name="textbox_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\textbox_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="financial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\financial.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="low" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\low.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -184,6 +187,9 @@
   <data name="home_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="customer_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customer_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="save_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -195,6 +201,9 @@
   </data>
   <data name="clearall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clearall.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="convert_32x323" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\convert_32x323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="business_calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\business_calculator.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -208,17 +217,14 @@
   <data name="bo_product_group" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bo_product_group.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="financial" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\financial.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="notes_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notes_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="paid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paid.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="properties_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\properties_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="save_32x322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_32x322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="charttype_bar3dstacked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\charttype_bar3dstacked.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -226,22 +232,25 @@
   <data name="usergroup_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usergroup_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forward.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="close_32x323" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_32x323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forward.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="convert_32x323" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\convert_32x323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="customer_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customer_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newappointment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newappointment.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="trade1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trade.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close_32x322" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_32x322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trade1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trade.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="security_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\security_lock.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

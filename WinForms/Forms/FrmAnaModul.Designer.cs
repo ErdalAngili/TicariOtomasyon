@@ -97,7 +97,7 @@
             this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
             this.ribbonControl1.ShowQatLocationSelector = false;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(1309, 98);
+            this.ribbonControl1.Size = new System.Drawing.Size(1224, 98);
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
@@ -152,6 +152,7 @@
             this.barStok.ItemAppearance.Normal.Options.UseFont = true;
             this.barStok.Name = "barStok";
             this.barStok.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barStok.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barStok_ItemClick);
             // 
             // barFirmalar
             // 
@@ -256,6 +257,7 @@
             this.barButtonItem12.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem12.Name = "barButtonItem12";
             this.barButtonItem12.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick);
             // 
             // barButtonItem13
             // 
@@ -358,7 +360,6 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem10);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem11);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
@@ -371,11 +372,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1309, 573);
+            this.ClientSize = new System.Drawing.Size(1224, 573);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "FrmAnaModul";
-            this.Text = "FrmAnaModul";
+            this.Text = "  ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();

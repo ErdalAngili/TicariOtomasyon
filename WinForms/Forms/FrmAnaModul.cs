@@ -116,5 +116,24 @@ namespace WinForms.Forms
                 frmHareketler.Show();
             }
         }
+        FrmStoklar frmStoklar;
+        private void barStok_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmStoklar==null)
+            {
+                frmStoklar = new FrmStoklar();
+                frmStoklar.MdiParent = this;
+                frmStoklar.Show();
+            }
+        }
+        FrmAyarlar frmAyarlar;
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmAyarlar == null)
+            {
+                frmAyarlar = new FrmAyarlar();
+                frmAyarlar.Show();
+            }
+        }
     }
 }
