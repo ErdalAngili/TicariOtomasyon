@@ -135,5 +135,15 @@ namespace WinForms.Forms
                 frmAyarlar.Show();
             }
         }
+        FrmKasa frmKasa;
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmKasa == null)
+            {
+                frmKasa = new FrmKasa();
+                frmKasa.MdiParent = this;
+                frmKasa.Show();
+            }
+        }
     }
 }
