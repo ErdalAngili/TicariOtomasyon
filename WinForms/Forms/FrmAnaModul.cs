@@ -145,5 +145,25 @@ namespace WinForms.Forms
                 frmKasa.Show();
             }
         }
+        FrmAnaSayfa FrmAnaSayfa;
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (FrmAnaSayfa==null)
+            {
+                FrmAnaSayfa = new FrmAnaSayfa();
+                FrmAnaSayfa.MdiParent = this;
+                FrmAnaSayfa.Show();
+            }
+        }
+
+        private void FrmAnaModul_Load(object sender, EventArgs e)
+        {
+            if (FrmAnaSayfa == null)
+            {
+                FrmAnaSayfa = new FrmAnaSayfa();
+                FrmAnaSayfa.MdiParent = this;
+                FrmAnaSayfa.Show();
+            }
+        }
     }
 }

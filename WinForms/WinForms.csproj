@@ -92,6 +92,12 @@
     <Compile Include="Forms\FrmAnaModul.Designer.cs">
       <DependentUpon>FrmAnaModul.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAnaSayfa.Designer.cs">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmAyarlar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmAnaModul.resx">
       <DependentUpon>FrmAnaModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAnaSayfa.resx">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmAyarlar.resx">
       <DependentUpon>FrmAyarlar.cs</DependentUpon>
@@ -426,6 +435,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\security_lock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\646c5778cb2613cb7afc9984e852efea.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
