@@ -115,7 +115,7 @@
             this.Txtkuladi.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Txtkuladi.Properties.Appearance.Options.UseFont = true;
             this.Txtkuladi.Size = new System.Drawing.Size(194, 26);
-            this.Txtkuladi.TabIndex = 3;
+            this.Txtkuladi.TabIndex = 1;
             this.Txtkuladi.EditValueChanged += new System.EventHandler(this.Txtkuladi_EditValueChanged);
             // 
             // labelControl1
@@ -135,7 +135,7 @@
             this.TxtSifre.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSifre.Properties.Appearance.Options.UseFont = true;
             this.TxtSifre.Size = new System.Drawing.Size(194, 26);
-            this.TxtSifre.TabIndex = 5;
+            this.TxtSifre.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -155,7 +155,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(139, 325);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(194, 36);
-            this.BtnKaydet.TabIndex = 13;
+            this.BtnKaydet.TabIndex = 3;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 

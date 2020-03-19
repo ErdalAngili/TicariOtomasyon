@@ -201,7 +201,7 @@
             this.btnAlanTemizle.Location = new System.Drawing.Point(113, 539);
             this.btnAlanTemizle.Name = "btnAlanTemizle";
             this.btnAlanTemizle.Size = new System.Drawing.Size(194, 36);
-            this.btnAlanTemizle.TabIndex = 38;
+            this.btnAlanTemizle.TabIndex = 10;
             this.btnAlanTemizle.Text = "Alanları Temizle";
             this.btnAlanTemizle.Click += new System.EventHandler(this.btnAlanTemizle_Click);
             // 
@@ -212,7 +212,7 @@
             this.TxtHitap.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtHitap.Properties.Appearance.Options.UseFont = true;
             this.TxtHitap.Size = new System.Drawing.Size(194, 26);
-            this.TxtHitap.TabIndex = 30;
+            this.TxtHitap.TabIndex = 5;
             // 
             // MaskTarih
             // 
@@ -221,7 +221,7 @@
             this.MaskTarih.Mask = "00/00/0000";
             this.MaskTarih.Name = "MaskTarih";
             this.MaskTarih.Size = new System.Drawing.Size(194, 25);
-            this.MaskTarih.TabIndex = 29;
+            this.MaskTarih.TabIndex = 1;
             this.MaskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // TxtNotID
@@ -242,7 +242,7 @@
             this.BtnSil.Location = new System.Drawing.Point(113, 490);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(194, 36);
-            this.BtnSil.TabIndex = 23;
+            this.BtnSil.TabIndex = 9;
             this.BtnSil.Text = "Sil";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
@@ -254,7 +254,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(112, 442);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(194, 36);
-            this.BtnGuncelle.TabIndex = 22;
+            this.BtnGuncelle.TabIndex = 8;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -266,7 +266,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(113, 394);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(194, 36);
-            this.BtnKaydet.TabIndex = 21;
+            this.BtnKaydet.TabIndex = 7;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
@@ -276,7 +276,7 @@
             this.RichDetay.Location = new System.Drawing.Point(112, 215);
             this.RichDetay.Name = "RichDetay";
             this.RichDetay.Size = new System.Drawing.Size(194, 138);
-            this.RichDetay.TabIndex = 20;
+            this.RichDetay.TabIndex = 6;
             this.RichDetay.Text = "";
             // 
             // labelControl9
@@ -306,7 +306,7 @@
             this.MskSaat.Mask = "00:00";
             this.MskSaat.Name = "MskSaat";
             this.MskSaat.Size = new System.Drawing.Size(194, 25);
-            this.MskSaat.TabIndex = 12;
+            this.MskSaat.TabIndex = 2;
             this.MskSaat.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl4
@@ -336,7 +336,7 @@
             this.TxtBaslik.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtBaslik.Properties.Appearance.Options.UseFont = true;
             this.TxtBaslik.Size = new System.Drawing.Size(194, 26);
-            this.TxtBaslik.TabIndex = 4;
+            this.TxtBaslik.TabIndex = 3;
             // 
             // labelControl2
             // 
@@ -355,7 +355,7 @@
             this.TxtOlusturan.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtOlusturan.Properties.Appearance.Options.UseFont = true;
             this.TxtOlusturan.Size = new System.Drawing.Size(194, 26);
-            this.TxtOlusturan.TabIndex = 1;
+            this.TxtOlusturan.TabIndex = 4;
             // 
             // labelControl1
             // 

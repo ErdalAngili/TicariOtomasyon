@@ -40,6 +40,7 @@
             this.ColSATISFIYAT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColDETAY = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnAlanTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.TxtId = new DevExpress.XtraEditors.TextEdit();
             this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
@@ -60,7 +61,6 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TxtAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.btnAlanTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -225,6 +225,18 @@
             this.groupControl1.Size = new System.Drawing.Size(340, 1040);
             this.groupControl1.TabIndex = 2;
             // 
+            // btnAlanTemizle
+            // 
+            this.btnAlanTemizle.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAlanTemizle.Appearance.Options.UseFont = true;
+            this.btnAlanTemizle.ImageOptions.SvgImage = global::WinForms.Properties.Resources.clearall;
+            this.btnAlanTemizle.Location = new System.Drawing.Point(107, 561);
+            this.btnAlanTemizle.Name = "btnAlanTemizle";
+            this.btnAlanTemizle.Size = new System.Drawing.Size(194, 36);
+            this.btnAlanTemizle.TabIndex = 12;
+            this.btnAlanTemizle.Text = "Alanları Temizle";
+            this.btnAlanTemizle.Click += new System.EventHandler(this.btnAlanTemizle_Click);
+            // 
             // TxtId
             // 
             this.TxtId.Location = new System.Drawing.Point(324, 565);
@@ -243,7 +255,7 @@
             this.BtnSil.Location = new System.Drawing.Point(107, 513);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(194, 36);
-            this.BtnSil.TabIndex = 23;
+            this.BtnSil.TabIndex = 11;
             this.BtnSil.Text = "Sil";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
@@ -255,7 +267,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(107, 466);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(194, 36);
-            this.BtnGuncelle.TabIndex = 22;
+            this.BtnGuncelle.TabIndex = 10;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -267,7 +279,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(107, 419);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(194, 36);
-            this.BtnKaydet.TabIndex = 21;
+            this.BtnKaydet.TabIndex = 9;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
@@ -277,7 +289,7 @@
             this.RichDetay.Location = new System.Drawing.Point(107, 289);
             this.RichDetay.Name = "RichDetay";
             this.RichDetay.Size = new System.Drawing.Size(194, 118);
-            this.RichDetay.TabIndex = 20;
+            this.RichDetay.TabIndex = 8;
             this.RichDetay.Text = "";
             // 
             // labelControl9
@@ -308,7 +320,7 @@
             this.TxtSatis.Properties.Appearance.Options.UseFont = true;
             this.TxtSatis.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.TxtSatis.Size = new System.Drawing.Size(195, 26);
-            this.TxtSatis.TabIndex = 16;
+            this.TxtSatis.TabIndex = 7;
             // 
             // labelControl7
             // 
@@ -329,7 +341,7 @@
             this.TxtMaliyet.Properties.Mask.EditMask = "n";
             this.TxtMaliyet.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.TxtMaliyet.Size = new System.Drawing.Size(194, 26);
-            this.TxtMaliyet.TabIndex = 14;
+            this.TxtMaliyet.TabIndex = 6;
             // 
             // labelControl6
             // 
@@ -348,7 +360,7 @@
             this.MskYil.Mask = "0000";
             this.MskYil.Name = "MskYil";
             this.MskYil.Size = new System.Drawing.Size(194, 25);
-            this.MskYil.TabIndex = 12;
+            this.MskYil.TabIndex = 4;
             this.MskYil.ValidatingType = typeof(int);
             // 
             // NudAdet
@@ -357,7 +369,7 @@
             this.NudAdet.Location = new System.Drawing.Point(107, 179);
             this.NudAdet.Name = "NudAdet";
             this.NudAdet.Size = new System.Drawing.Size(194, 25);
-            this.NudAdet.TabIndex = 11;
+            this.NudAdet.TabIndex = 5;
             // 
             // labelControl4
             // 
@@ -376,7 +388,7 @@
             this.TxtModel.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtModel.Properties.Appearance.Options.UseFont = true;
             this.TxtModel.Size = new System.Drawing.Size(194, 26);
-            this.TxtModel.TabIndex = 6;
+            this.TxtModel.TabIndex = 3;
             // 
             // labelControl3
             // 
@@ -395,7 +407,7 @@
             this.TxtMarka.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtMarka.Properties.Appearance.Options.UseFont = true;
             this.TxtMarka.Size = new System.Drawing.Size(194, 26);
-            this.TxtMarka.TabIndex = 4;
+            this.TxtMarka.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -425,18 +437,6 @@
             this.labelControl1.Size = new System.Drawing.Size(23, 20);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Ad:";
-            // 
-            // btnAlanTemizle
-            // 
-            this.btnAlanTemizle.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAlanTemizle.Appearance.Options.UseFont = true;
-            this.btnAlanTemizle.ImageOptions.SvgImage = global::WinForms.Properties.Resources.clearall;
-            this.btnAlanTemizle.Location = new System.Drawing.Point(107, 561);
-            this.btnAlanTemizle.Name = "btnAlanTemizle";
-            this.btnAlanTemizle.Size = new System.Drawing.Size(194, 36);
-            this.btnAlanTemizle.TabIndex = 38;
-            this.btnAlanTemizle.Text = "Alanları Temizle";
-            this.btnAlanTemizle.Click += new System.EventHandler(this.btnAlanTemizle_Click);
             // 
             // FrmUrunler
             // 

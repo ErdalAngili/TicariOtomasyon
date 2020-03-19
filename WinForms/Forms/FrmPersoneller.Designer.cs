@@ -41,6 +41,7 @@
             this.ColADRES = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColGOREV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnAlanTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.TxtMail = new WinForms.UserControl.MyTextMail.MyTextMail();
             this.Comilce = new System.Windows.Forms.ComboBox();
             this.Comil = new System.Windows.Forms.ComboBox();
@@ -63,7 +64,6 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TxtAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.btnAlanTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -239,6 +239,18 @@
             this.groupControl1.Size = new System.Drawing.Size(338, 1046);
             this.groupControl1.TabIndex = 5;
             // 
+            // btnAlanTemizle
+            // 
+            this.btnAlanTemizle.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAlanTemizle.Appearance.Options.UseFont = true;
+            this.btnAlanTemizle.ImageOptions.SvgImage = global::WinForms.Properties.Resources.clearall;
+            this.btnAlanTemizle.Location = new System.Drawing.Point(113, 640);
+            this.btnAlanTemizle.Name = "btnAlanTemizle";
+            this.btnAlanTemizle.Size = new System.Drawing.Size(194, 36);
+            this.btnAlanTemizle.TabIndex = 13;
+            this.btnAlanTemizle.Text = "Alanları Temizle";
+            this.btnAlanTemizle.Click += new System.EventHandler(this.btnAlanTemizle_Click);
+            // 
             // TxtMail
             // 
             this.TxtMail.Location = new System.Drawing.Point(112, 185);
@@ -251,7 +263,7 @@
             this.TxtMail.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.TxtMail.Properties.MaxLength = 50;
             this.TxtMail.Size = new System.Drawing.Size(194, 26);
-            this.TxtMail.TabIndex = 34;
+            this.TxtMail.TabIndex = 5;
             // 
             // Comilce
             // 
@@ -260,7 +272,7 @@
             this.Comilce.Location = new System.Drawing.Point(113, 263);
             this.Comilce.Name = "Comilce";
             this.Comilce.Size = new System.Drawing.Size(194, 28);
-            this.Comilce.TabIndex = 32;
+            this.Comilce.TabIndex = 7;
             // 
             // Comil
             // 
@@ -269,7 +281,7 @@
             this.Comil.Location = new System.Drawing.Point(113, 223);
             this.Comil.Name = "Comil";
             this.Comil.Size = new System.Drawing.Size(194, 28);
-            this.Comil.TabIndex = 31;
+            this.Comil.TabIndex = 6;
             this.Comil.SelectedIndexChanged += new System.EventHandler(this.Comil_SelectedIndexChanged);
             // 
             // MaskTC
@@ -279,7 +291,7 @@
             this.MaskTC.Mask = "00000000000";
             this.MaskTC.Name = "MaskTC";
             this.MaskTC.Size = new System.Drawing.Size(194, 25);
-            this.MaskTC.TabIndex = 30;
+            this.MaskTC.TabIndex = 4;
             this.MaskTC.ValidatingType = typeof(int);
             // 
             // MaskTelefon
@@ -289,7 +301,7 @@
             this.MaskTelefon.Mask = "(999) 000-0000";
             this.MaskTelefon.Name = "MaskTelefon";
             this.MaskTelefon.Size = new System.Drawing.Size(194, 25);
-            this.MaskTelefon.TabIndex = 29;
+            this.MaskTelefon.TabIndex = 3;
             // 
             // TxtGorev
             // 
@@ -298,7 +310,7 @@
             this.TxtGorev.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtGorev.Properties.Appearance.Options.UseFont = true;
             this.TxtGorev.Size = new System.Drawing.Size(194, 26);
-            this.TxtGorev.TabIndex = 28;
+            this.TxtGorev.TabIndex = 8;
             // 
             // labelControl10
             // 
@@ -338,7 +350,7 @@
             this.BtnSil.Location = new System.Drawing.Point(113, 591);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(194, 36);
-            this.BtnSil.TabIndex = 23;
+            this.BtnSil.TabIndex = 12;
             this.BtnSil.Text = "Sil";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
@@ -350,7 +362,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(112, 543);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(194, 36);
-            this.BtnGuncelle.TabIndex = 22;
+            this.BtnGuncelle.TabIndex = 11;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -362,7 +374,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(113, 495);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(194, 36);
-            this.BtnKaydet.TabIndex = 21;
+            this.BtnKaydet.TabIndex = 10;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
@@ -372,7 +384,7 @@
             this.RichAdres.Location = new System.Drawing.Point(112, 340);
             this.RichAdres.Name = "RichAdres";
             this.RichAdres.Size = new System.Drawing.Size(194, 138);
-            this.RichAdres.TabIndex = 20;
+            this.RichAdres.TabIndex = 9;
             this.RichAdres.Text = "";
             // 
             // labelControl9
@@ -432,7 +444,7 @@
             this.TxtSoyad.Properties.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSoyad.Properties.Appearance.Options.UseFont = true;
             this.TxtSoyad.Size = new System.Drawing.Size(194, 26);
-            this.TxtSoyad.TabIndex = 4;
+            this.TxtSoyad.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -462,18 +474,6 @@
             this.labelControl1.Size = new System.Drawing.Size(23, 20);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Ad:";
-            // 
-            // btnAlanTemizle
-            // 
-            this.btnAlanTemizle.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAlanTemizle.Appearance.Options.UseFont = true;
-            this.btnAlanTemizle.ImageOptions.SvgImage = global::WinForms.Properties.Resources.clearall;
-            this.btnAlanTemizle.Location = new System.Drawing.Point(113, 640);
-            this.btnAlanTemizle.Name = "btnAlanTemizle";
-            this.btnAlanTemizle.Size = new System.Drawing.Size(194, 36);
-            this.btnAlanTemizle.TabIndex = 38;
-            this.btnAlanTemizle.Text = "Alanları Temizle";
-            this.btnAlanTemizle.Click += new System.EventHandler(this.btnAlanTemizle_Click);
             // 
             // FrmPersoneller
             // 

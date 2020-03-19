@@ -43,5 +43,16 @@ namespace WinForms.Forms
             Listele();
             ChartUrunEkleme();
         }
+
+        private void myGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmStokDetay frmStokDetay = new FrmStokDetay();
+            DataRow row = myGridView1.GetDataRow(myGridView1.FocusedRowHandle);
+            if (row!=null)
+            {
+                frmStokDetay.Ad = row["URUNAD"].ToString();
+            }
+            frmStokDetay.Show();
+        }
     }
 }
