@@ -96,8 +96,6 @@ namespace WinForms.Forms
                 komut2.Parameters.AddWithValue("@p4", TxtTutar.Text);
                 komut2.Parameters.AddWithValue("@p5", lookFirma.EditValue);
                 komut2.ExecuteNonQuery();
-                MessageBox.Show("Fatura Detayı Kayıt Edildi.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                sqlbaglanti.baglanti().Close();
             }
         }
 
